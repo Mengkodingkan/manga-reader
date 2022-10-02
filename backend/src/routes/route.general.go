@@ -4,12 +4,11 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func General(route *gin.Engine) {
-	group := route.Group("/")
+func General(router *gin.RouterGroup) {
 
-	group.GET("/", func(c *gin.Context) {
+	router.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"message": "Hello World",
+			"message": "pong",
 		})
 	})
 }

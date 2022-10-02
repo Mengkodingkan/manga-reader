@@ -1,45 +1,25 @@
 package main
 
 import (
-	"fmt"
 	"log"
-	"net/http"
-	"strings"
 
-	"github.com/PuerkitoBio/goquery"
+	route "Mengkodingkan.com/manga-reader/src/routes"
+	"github.com/gin-contrib/cors"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	res, err := http.Get("https://komikindo.id")
+	router := RouterInit()
 
-	if err != nil {
-		fmt.Println(err)
-	}
-	defer res.Body.Close()
+	log.Fatal(router.Run(":3000"))
+}
 
-	if res.StatusCode != 200 {
-		log.Fatalf("status code error: %d %s", res.StatusCode, res.Status)
-	}
+func RouterInit() *gin.Engine {
+	router := gin.Default()
+	router.Use(cors.Default())
 
-	doc, err := goquery.NewDocumentFromReader(res.Body)
+	RouteApi := router.Group("/api/v1")
+	route.General(RouteApi)
 
-	if err != nil {
-		fmt.Println(err)
-	}
-
-	// rows := make([]string, 0)
-
-	doc.Find(".odadingslider").Children().Each(func(i int, s *goquery.Selection) {
-		info := s.Find(".animposx").Find("a")
-
-		title := info.Find("img").AttrOr("title", "No title")
-		link, _ := info.Attr("href")
-		image, _ := info.Find("img").Attr("src")
-
-		fmt.Println(title)
-		fmt.Println(link)
-		fmt.Println(strings.Split(image, "?")[0])
-		fmt.Println("")
-	})
-
+	return router
 }
