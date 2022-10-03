@@ -6,7 +6,6 @@ import (
 )
 
 func General(router *gin.RouterGroup) {
-
-	router.GET("/ping", controller.Ping)
+	router.GET("/", controller.Ping)
 	router.GET("/home", controller.Home)
 }

@@ -15,11 +15,15 @@ func main() {
 }
 
 func RouterInit() *gin.Engine {
+
 	router := gin.Default()
 	router.Use(cors.Default())
 
 	RouteApi := router.Group("/api/v1")
 	route.General(RouteApi)
 
+	router.NoRoute(func(c *gin.Context) {
+		c.JSON(404, gin.H{"status": "error", "message": "Path not found"})
+	})
 	return router
 }
