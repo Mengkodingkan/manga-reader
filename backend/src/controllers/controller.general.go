@@ -114,3 +114,121 @@ func Home(c *gin.Context) {
 		"data":   homeResponse,
 	})
 }
+
+func ListKomik(c *gin.Context) {
+	var listKomikResponse structure.ListKomikResponse
+
+	page := c.Param("page")
+	if page == "" {
+		page = "1"
+	}
+
+	resp := http.Get("https://komikindo.id/daftar-manga/page/" + page)
+
+	if resp.StatusCode != 200 {
+		c.JSON(500, gin.H{
+			"status":  "error",
+			"message": "Something went wrong",
+		})
+	}
+
+	doc, errs := goquery.NewDocumentFromReader(resp.Body)
+	if errs != nil {
+		fmt.Println(errs)
+	}
+
+	doc.Find(".animepost").Each(func(i int, s *goquery.Selection) {
+		var name = s.Find("[itemprop='url']").AttrOr("title", "No title")
+		var thumb = strings.Split(s.Find("img").AttrOr("src", "No thumb"), "?")[0]
+		var url = s.Find("[itemprop='url']").AttrOr("href", "No url")
+		var endpoint = strings.Replace(url, "https://komikindo.id/", "", -1)
+
+		listKomikResponse.Komik = append(listKomikResponse.Komik, structure.ListKomik{
+			Name:  name,
+			Thumb: thumb,
+			Url: []structure.DetailData{
+				{
+					Name:     name,
+					Url:      url,
+					Endpoint: endpoint,
+				},
+			},
+		})
+	})
+
+	doc.Find(".page-numbers").Each(func(i int, s *goquery.Selection) {
+		var name = s.Text()
+		var url = s.AttrOr("href", "No url")
+		var endpoint = strings.Replace(url, "https://komikindo.id/daftar-manga/", "", -1)
+
+		listKomikResponse.Pagination = append(listKomikResponse.Pagination, structure.DetailData{
+			Name:     name,
+			Url:      url,
+			Endpoint: endpoint,
+		})
+	})
+
+	c.JSON(200, gin.H{
+		"data":   listKomikResponse,
+		"status": "success",
+	})
+}
+
+func ListKomikTerbaru(c *gin.Context) {
+	var listKomikResponse structure.ListKomikResponse
+
+	page := c.Param("page")
+	if page == "" {
+		page = "1"
+	}
+
+	resp := http.Get("https://komikindo.id/komik-terbaru/page/" + page)
+
+	if resp.StatusCode != 200 {
+		c.JSON(500, gin.H{
+			"status":  "error",
+			"message": "Something went wrong",
+		})
+	}
+
+	doc, errs := goquery.NewDocumentFromReader(resp.Body)
+	if errs != nil {
+		fmt.Println(errs)
+	}
+
+	doc.Find(".animepost").Each(func(i int, s *goquery.Selection) {
+		var name = s.Find("[itemprop='url']").AttrOr("title", "No title")
+		var thumb = strings.Split(s.Find("img").AttrOr("src", "No thumb"), "?")[0]
+		var url = s.Find("[itemprop='url']").AttrOr("href", "No url")
+		var endpoint = strings.Replace(url, "https://komikindo.id/", "", -1)
+
+		listKomikResponse.Komik = append(listKomikResponse.Komik, structure.ListKomik{
+			Name:  name,
+			Thumb: thumb,
+			Url: []structure.DetailData{
+				{
+					Name:     name,
+					Url:      url,
+					Endpoint: endpoint,
+				},
+			},
+		})
+	})
+
+	doc.Find(".page-numbers").Each(func(i int, s *goquery.Selection) {
+		var name = s.Text()
+		var url = s.AttrOr("href", "No url")
+		var endpoint = strings.Replace(url, "https://komikindo.id/daftar-manga/", "", -1)
+
+		listKomikResponse.Pagination = append(listKomikResponse.Pagination, structure.DetailData{
+			Name:     name,
+			Url:      url,
+			Endpoint: endpoint,
+		})
+	})
+
+	c.JSON(200, gin.H{
+		"data":   listKomikResponse,
+		"status": "success",
+	})
+}

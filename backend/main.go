@@ -21,6 +21,7 @@ func RouterInit() *gin.Engine {
 
 	RouteApi := router.Group("/api/v1")
 	route.General(RouteApi)
+	route.Komik(RouteApi)
 
 	router.NoRoute(func(c *gin.Context) {
 		c.JSON(404, gin.H{"status": "error", "message": "Path not found"})

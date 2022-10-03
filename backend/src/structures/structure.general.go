@@ -20,6 +20,16 @@ type HomeLatest struct {
 	Url   []DetailData `json:"url"`
 }
 
+type ListKomikResponse struct {
+	Komik      []ListKomik  `json:"komik"`
+	Pagination []DetailData `json:"pagination"`
+}
+type ListKomik struct {
+	Name  string       `json:"name"`
+	Thumb string       `json:"thumb"`
+	Url   []DetailData `json:"url"`
+}
+
 type DetailData struct {
 	Name     string `json:"name"`
 	Url      string `json:"url"`
