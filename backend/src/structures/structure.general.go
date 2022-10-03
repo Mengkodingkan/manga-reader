@@ -1,0 +1,27 @@
+package structures
+
+type HomeResponse struct {
+	Menu        []DetailData  `json:"menu"`
+	HomePopular []HomePopular `json:"homePopular"`
+	HomeLatest  []HomeLatest  `json:"homeLatest"`
+}
+
+type HomePopular struct {
+	Name        string       `json:"name"`
+	Thumb       string       `json:"thumb"`
+	Url         []DetailData `json:"url"`
+	LastUpload  string       `json:"lastUpload"`
+	LastChapter []DetailData `json:"lastChapter"`
+}
+
+type HomeLatest struct {
+	Name  string       `json:"name"`
+	Thumb string       `json:"thumb"`
+	Url   []DetailData `json:"url"`
+}
+
+type DetailData struct {
+	Name     string `json:"name"`
+	Url      string `json:"url"`
+	Endpoint string `json:"endpoint"`
+}
