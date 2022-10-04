@@ -238,3 +238,71 @@ func ListKomikTerbaru(c *gin.Context) {
 		Data:   listKomikResponse,
 	})
 }
+
+func SearchKomik(c *gin.Context) {
+	var SearchKomikResponse structure.SearchKomikResponse
+	page := c.Param("page")
+	query := c.Query("s")
+
+	if page == "" {
+		page = "1"
+	}
+
+	if query == "" {
+		c.JSON(400, structure.Error{
+			Status:  "error",
+			Message: "Query is required",
+		})
+	}
+
+	resp := http.Get("https://komikindo.id/page/" + page + "/?s=" + query)
+	if resp.StatusCode != 200 {
+		c.JSON(500, structure.Error{
+			Status:  "error",
+			Message: "Something went wrong",
+		})
+	}
+
+	doc, errs := goquery.NewDocumentFromReader(resp.Body)
+	if errs != nil {
+		fmt.Println(errs)
+	}
+
+	doc.Find(".animepost").Each(func(i int, s *goquery.Selection) {
+		var name = s.Find("a").AttrOr("title", "No title")
+		var thumb = strings.Split(s.Find("img").AttrOr("src", "No thumb"), "?")[0]
+		var url = s.Find("a").AttrOr("href", "No url")
+		var endpoint = strings.Replace(url, "https://komikindo.id/", "", -1)
+
+		SearchKomikResponse.Komik = append(SearchKomikResponse.Komik, structure.ListKomik{
+			Name:  name,
+			Thumb: thumb,
+			Url: []structure.DetailData{
+				{
+					Name:     name,
+					Url:      url,
+					Endpoint: endpoint,
+				},
+			},
+		})
+	})
+
+	doc.Find(".page-numbers").Each(func(i int, s *goquery.Selection) {
+		var name = s.Text()
+		var url = s.AttrOr("href", "No url")
+		var endpoint = strings.Replace(url, "https://komikindo.id/", "", -1)
+
+		SearchKomikResponse.Pagination = append(SearchKomikResponse.Pagination, structure.DetailData{
+			Name:     name,
+			Url:      url,
+			Endpoint: endpoint,
+		})
+	})
+	defer resp.Body.Close()
+
+	c.JSON(200, structure.Success{
+		Status: "success",
+		Data:   SearchKomikResponse,
+	})
+
+}

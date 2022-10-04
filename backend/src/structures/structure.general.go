@@ -30,6 +30,10 @@ type ListKomik struct {
 	Url   []DetailData `json:"url"`
 }
 
+type SearchKomikResponse struct {
+	Komik      []ListKomik  `json:"komik"`
+	Pagination []DetailData `json:"pagination"`
+}
 type DetailData struct {
 	Name     string `json:"name"`
 	Url      string `json:"url"`

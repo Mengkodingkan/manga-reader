@@ -12,4 +12,6 @@ func General(router *gin.RouterGroup) {
 	router.GET("/daftar-komik/page/:page", controller.ListKomik)
 	router.GET("/komik-terbaru", controller.ListKomikTerbaru)
 	router.GET("/komik-terbaru/page/:page", controller.ListKomikTerbaru)
+	router.GET("/search", controller.SearchKomik)
+	router.GET("/search/page/:page", controller.SearchKomik)
 }
