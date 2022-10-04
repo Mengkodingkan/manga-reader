@@ -7,4 +7,5 @@ import (
 
 func Komik(router *gin.RouterGroup) {
 	router.GET("/komik/:endpoint", controller.KomikDetail)
+	router.GET("/chapter/:endpoint", controller.ChapterDetail)
 }

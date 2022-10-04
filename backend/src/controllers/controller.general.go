@@ -20,10 +20,12 @@ func Ping(c *gin.Context) {
 		})
 	}
 
-	c.JSON(200, gin.H{
-		"status":     "success",
-		"message":    resp.Status,
-		"statusCode": resp.StatusCode,
+	defer resp.Body.Close()
+
+	c.JSON(200, structure.SuccessPing{
+		Status:     "success",
+		Message:    "Website is up",
+		StatusCode: resp.StatusCode,
 	})
 }
 
@@ -33,9 +35,9 @@ func Home(c *gin.Context) {
 	resp := http.Get("https://komikindo.id")
 
 	if resp.StatusCode != 200 {
-		c.JSON(500, gin.H{
-			"status":  "error",
-			"message": "Something went wrong",
+		c.JSON(500, structure.Error{
+			Status:  "error",
+			Message: "Something went wrong",
 		})
 	}
 
@@ -109,9 +111,9 @@ func Home(c *gin.Context) {
 
 	defer resp.Body.Close()
 
-	c.JSON(200, gin.H{
-		"status": "success",
-		"data":   homeResponse,
+	c.JSON(200, structure.Success{
+		Status: "success",
+		Data:   homeResponse,
 	})
 }
 
@@ -168,9 +170,11 @@ func ListKomik(c *gin.Context) {
 		})
 	})
 
-	c.JSON(200, gin.H{
-		"data":   listKomikResponse,
-		"status": "success",
+	defer resp.Body.Close()
+
+	c.JSON(200, structure.Success{
+		Status: "success",
+		Data:   listKomikResponse,
 	})
 }
 
@@ -227,8 +231,10 @@ func ListKomikTerbaru(c *gin.Context) {
 		})
 	})
 
-	c.JSON(200, gin.H{
-		"data":   listKomikResponse,
-		"status": "success",
+	defer resp.Body.Close()
+
+	c.JSON(200, structure.Success{
+		Status: "success",
+		Data:   listKomikResponse,
 	})
 }
