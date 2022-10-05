@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 
 import Navbar from './Component/Navbar';
+import Footer from './Component/Footer';
 import Home from './Pages/Home';
 import reportWebVitals from './reportWebVitals';
 
@@ -22,6 +23,8 @@ root.render(
         </Routes>
       </BrowserRouter>
     </div>
+
+    <Footer />
   </React.StrictMode>
 );
 

@@ -14,7 +14,7 @@ export default function NavbarComponent() {
                             height="30"
                             className="d-inline-block align-top"
                         />{' '}
-                        React Bootstrap
+                        Manga Reader
                     </Navbar.Brand>
                 </Container>
             </Navbar>
