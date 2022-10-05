@@ -71,7 +71,7 @@ func Home(c *gin.Context) {
 
 		homeResponse.HomePopular = append(homeResponse.HomePopular, structure.HomePopular{
 			Name:  name,
-			Thumb: thumb,
+			Thumb: strings.Replace(thumb, "https://", "https://cdn.statically.io/img/", -1),
 			Url: structure.DetailData{
 				Name:     name,
 				Url:      url,
@@ -96,7 +96,7 @@ func Home(c *gin.Context) {
 
 		homeResponse.HomeLatest = append(homeResponse.HomeLatest, structure.HomeLatest{
 			Name:  name,
-			Thumb: thumb,
+			Thumb: strings.Replace(thumb, "https://", "https://cdn.statically.io/img/", -1),
 			Url: structure.DetailData{
 				Name:     name,
 				Url:      url,
@@ -144,12 +144,10 @@ func ListKomik(c *gin.Context) {
 		listKomikResponse.Komik = append(listKomikResponse.Komik, structure.ListKomik{
 			Name:  name,
 			Thumb: thumb,
-			Url: []structure.DetailData{
-				{
-					Name:     name,
-					Url:      url,
-					Endpoint: endpoint,
-				},
+			Url: structure.DetailData{
+				Name:     name,
+				Url:      url,
+				Endpoint: endpoint,
 			},
 		})
 	})
@@ -205,12 +203,10 @@ func ListKomikTerbaru(c *gin.Context) {
 		listKomikResponse.Komik = append(listKomikResponse.Komik, structure.ListKomik{
 			Name:  name,
 			Thumb: thumb,
-			Url: []structure.DetailData{
-				{
-					Name:     name,
-					Url:      url,
-					Endpoint: endpoint,
-				},
+			Url: structure.DetailData{
+				Name:     name,
+				Url:      url,
+				Endpoint: endpoint,
 			},
 		})
 	})
@@ -273,12 +269,10 @@ func SearchKomik(c *gin.Context) {
 		SearchKomikResponse.Komik = append(SearchKomikResponse.Komik, structure.ListKomik{
 			Name:  name,
 			Thumb: thumb,
-			Url: []structure.DetailData{
-				{
-					Name:     name,
-					Url:      url,
-					Endpoint: endpoint,
-				},
+			Url: structure.DetailData{
+				Name:     name,
+				Url:      url,
+				Endpoint: endpoint,
 			},
 		})
 	})

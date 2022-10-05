@@ -25,9 +25,9 @@ type ListKomikResponse struct {
 	Pagination []DetailData `json:"pagination"`
 }
 type ListKomik struct {
-	Name  string       `json:"name"`
-	Thumb string       `json:"thumb"`
-	Url   []DetailData `json:"url"`
+	Name  string     `json:"name"`
+	Thumb string     `json:"thumb"`
+	Url   DetailData `json:"url"`
 }
 
 type SearchKomikResponse struct {

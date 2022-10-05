@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
 
 function getKomik() {
     return fetch('http://localhost:3568/api/v1/home')
@@ -22,31 +24,27 @@ export default function Home() {
 
     return (
         <>
-            <div className="row mt-4 justify-content-center">
-                <div className="col">
+            <Row className='mt-4 justify-content-center'>
+                <Col>
                     <h1 className="text-center">Home</h1>
-                </div>
-            </div>
+                </Col>
+            </Row>
             <hr />
-            <div className="row">
+
+            <Row>
                 <h3 className="text-center"> Newest Manga </h3>
 
                 {komik.map((item) => (
-                    <div className="col-md-3">
-                        <div className="card-mb-3" style={{ width: 'auto' }}>
-                            <img src={item.thumb} class="card-img-top" alt="" />
-                            <div class="card-body">
-                                <h5 class="card-title text-center">
-                                    {item.name}
-                                </h5>
-                                <button class="btn btn-dark btn-sm btn-block see-detail" href="#" data-toggle="modal"
-                                    data-source="komikindo" data-endpoint={item.endpoint}
-                                    data-target="#exampleModal">Detail</button>
-                            </div>
-                        </div>
-                    </div>
+                    <Col md={3}>
+                        <Card style={{ width: 'auto' }}>
+                            <Card.Img variant='top' src={item.thumb} />
+                            <Card.Body>
+                                <Card.Title className='text-center'>{item.name}</Card.Title>
+                            </Card.Body>
+                        </Card>
+                    </Col>
                 ))}
-            </div>
+            </Row>
         </>
     );
 }
