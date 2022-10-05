@@ -11,7 +11,7 @@ import (
 func main() {
 	router := RouterInit()
 
-	log.Fatal(router.Run(":3000"))
+	log.Fatal(router.Run(":3568"))
 }
 
 func RouterInit() *gin.Engine {

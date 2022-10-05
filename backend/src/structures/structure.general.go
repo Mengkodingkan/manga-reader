@@ -9,15 +9,15 @@ type HomeResponse struct {
 type HomePopular struct {
 	Name        string       `json:"name"`
 	Thumb       string       `json:"thumb"`
-	Url         []DetailData `json:"url"`
+	Url         interface{}  `json:"url"`
 	LastUpload  string       `json:"lastUpload"`
 	LastChapter []DetailData `json:"lastChapter"`
 }
 
 type HomeLatest struct {
-	Name  string       `json:"name"`
-	Thumb string       `json:"thumb"`
-	Url   []DetailData `json:"url"`
+	Name  string      `json:"name"`
+	Thumb string      `json:"thumb"`
+	Url   interface{} `json:"url"`
 }
 
 type ListKomikResponse struct {
