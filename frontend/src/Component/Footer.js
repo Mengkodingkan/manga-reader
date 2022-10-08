@@ -1,10 +1,14 @@
 
 export default function Footer() {
     return (
-        <footer class="page-footer">
-            <div class="footer-copyright text-center py-3">© 2022 All Rights Reserved.
-                <a href="https://github.com/Mengkodingkan/">Mengkodingkan</a>
-            </div>
-        </footer>
+        <>
+            <hr />
+            <footer className="page-footer">
+                <div className="footer-copyright text-center py-3">© 2022 All Rights Reserved.
+                    <a href="https://github.com/Mengkodingkan/">Mengkodingkan</a>
+                </div>
+            </footer>
+
+        </>
     );
 }

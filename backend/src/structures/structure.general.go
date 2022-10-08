@@ -9,15 +9,17 @@ type HomeResponse struct {
 type HomePopular struct {
 	Name        string       `json:"name"`
 	Thumb       string       `json:"thumb"`
-	Url         interface{}  `json:"url"`
+	Url         string       `json:"url"`
+	Endpoint    string       `json:"endpoint"`
 	LastUpload  string       `json:"lastUpload"`
 	LastChapter []DetailData `json:"lastChapter"`
 }
 
 type HomeLatest struct {
-	Name  string      `json:"name"`
-	Thumb string      `json:"thumb"`
-	Url   interface{} `json:"url"`
+	Name     string `json:"name"`
+	Thumb    string `json:"thumb"`
+	Url      string `json:"url"`
+	Endpoint string `json:"endpoint"`
 }
 
 type ListKomikResponse struct {
@@ -25,9 +27,10 @@ type ListKomikResponse struct {
 	Pagination []DetailData `json:"pagination"`
 }
 type ListKomik struct {
-	Name  string     `json:"name"`
-	Thumb string     `json:"thumb"`
-	Url   DetailData `json:"url"`
+	Name     string `json:"name"`
+	Thumb    string `json:"thumb"`
+	Url      string `json:"url"`
+	Endpoint string `json:"endpoint"`
 }
 
 type SearchKomikResponse struct {
