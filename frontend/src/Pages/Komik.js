@@ -85,7 +85,7 @@ export default function KomikResponse() {
                             <Image src={komik.thumb} onError={ImageOnError} fluid />
                         </Col>
 
-                        <Col md={8}>
+                        <Col md={8} key={komik.endpoint}>
                             <ListGroup>
                                 <ListGroup.Item><b>Judul:</b> {komik.title}</ListGroup.Item>
                                 <ListGroup.Item><b>Alternatif:</b> {ArrComasList(komik.alter)}</ListGroup.Item>

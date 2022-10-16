@@ -47,13 +47,38 @@ export default function Home() {
                         <title>Manga Reader • Home</title>
                     </Helmet>
 
-                    <Row className='mt-4 justify-content-center'>
-                        <Col>
-                            <h1 className="text-center">Home</h1>
-                        </Col>
+
+                    <Row className='mt-4'>
+                        <h4 className="text-center">Komik Terpopuler</h4>
+                        <hr />
+                        {komik.homePopular.map((item) => (
+                            <Col key={item.endpoint} xs={6} md={4} lg={3}>
+                                <Card>
+                                    <Card.Img
+                                        variant="top"
+                                        src={item.thumb}
+                                        onError={ImageOnError}
+                                    />
+                                    <Card.Body>
+                                        <Card.Title className='text-center'>
+                                            <Link to={item.endpoint}>
+                                                {item.name}
+                                            </Link>
+                                        </Card.Title>
+                                        <Card.Text>
+                                            <div className="d-grid gap-2">
+                                                <Link to={item.endpoint} className='btn btn-secondary'>Detail</Link>
+                                            </div>
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        ))}
                     </Row>
-                    <hr />
+                    <br />
                     <Row>
+                        <h4 className="text-center">Komik Terbaru</h4>
+                        <hr />
                         {komik.homeLatest.map((item) => (
                             <Col key={item.endpoint} xs={6} md={4} lg={3}>
                                 <Card>
