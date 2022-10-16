@@ -11,40 +11,65 @@ async function getChapter(endpoint) {
     return json.data;
 }
 
+function ImageOnError(e) {
+    e.target.onerror = null;
+
+    let src = e.target.src;
+    if (src.includes("i2.wp.com")) src = src.replace("i2.wp.com", "cdn.statically.io/img");
+    const base64img = btoa(src);
+
+    return (e.target.src = 'https://bypass.kato-rest.us/?q=' + base64img);
+}
+
+function ChapterImage(data) {
+    if (typeof data != "object" || data.length < 1) return data;
+
+    return data.map((item) => (
+        <Image src={item} onError={ImageOnError} fluid />
+    ));
+}
+
+
 export default function ChapterResponse() {
     const { endpoint } = useParams();
-    console.log(`http://localhost:3568/api/v1/chapter/${endpoint}`);
     const [chapter, setChapter] = useState({});
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         getChapter(endpoint).then((data) => {
             setChapter(data);
+            setLoading(false);
         });
     }, [endpoint]);
 
-    function ChapterImage(data) {
-        if (typeof data != "object" || data.length < 1) return data;
-
-        return data.map((item) => (
-            <Image src={item} fluid />
-        ));
-    }
 
     return (
         <>
-            <Helmet>
-                <title>{`Manga Reader • ${chapter.title}`}</title>
-            </Helmet>
+            {loading ? (
+                <Row>
+                    <div className="d-flex justify-content-center align-items-center" style={{ 'minHeight': '100vh' }}>
+                        <div className="spinner-border" role="status">
+                            <span className="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </Row>
+            ) : (
+                <>
+                    <Helmet>
+                        <title>{`Manga Reader • ${chapter.title}`}</title>
+                    </Helmet>
 
-            <Row className="mt-4">
-                <h2> {chapter.title} </h2>
-            </Row>
+                    <Row className="mt-4">
+                        <h2> {chapter.title} </h2>
+                    </Row>
 
-            <hr />
+                    <hr />
 
-            <Row className="mt-4">
-                {ChapterImage(chapter.images)}
-            </Row>
+                    <Row className="mt-4">
+                        {ChapterImage(chapter.images)}
+                    </Row>
+                </>
+            )}
         </>
     )
 }

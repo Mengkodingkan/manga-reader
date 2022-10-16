@@ -3,14 +3,13 @@ import { Link } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import { Helmet } from 'react-helmet';
 
 async function getKomik() {
     const response = await fetch('http://localhost:3568/api/v1/home');
     const json = await response.json();
 
-    return json.data.homeLatest;
+    return json.data;
 }
 
 function ImageOnError(e) {
@@ -55,7 +54,7 @@ export default function Home() {
                     </Row>
                     <hr />
                     <Row>
-                        {komik.map((item) => (
+                        {komik.homeLatest.map((item) => (
                             <Col key={item.endpoint} xs={6} md={4} lg={3}>
                                 <Card>
                                     <Card.Img
@@ -70,7 +69,7 @@ export default function Home() {
                                             </Link>
                                         </Card.Title>
                                         <Card.Text>
-                                            <div class="d-grid gap-2">
+                                            <div className="d-grid gap-2">
                                                 <Link to={item.endpoint} className='btn btn-secondary'>Detail</Link>
                                             </div>
                                         </Card.Text>
