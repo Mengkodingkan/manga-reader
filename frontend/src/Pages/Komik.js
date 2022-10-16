@@ -21,90 +21,107 @@ function ImageOnError(e) {
     return (e.target.src = `https://bypass.kato-rest.us/?q=${base64img}`);
 }
 
+function ArrComasList(data) {
+    if (typeof data != "object" || data.length < 1) return data;
+
+    return data.join(", ");
+}
+
+function ChapterList(data) {
+    if (typeof data != "object" || data.length < 1) return data;
+
+    return data.map((item) => (
+        <tr>
+            <td>{item.name}</td>
+            <td>
+                <div className='d-grid gap-2'>
+                    <Link to={`/chapter/${item.endpoint}`} className="btn btn-secondary">Baca Komik</Link>
+                </div>
+            </td>
+        </tr>
+    ));
+}
+
 export default function KomikResponse() {
     const { endpoint } = useParams();
     const [komik, setKomik] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         getKomik(endpoint).then((data) => {
             setKomik(data);
+
+            setLoading(false);
         });
 
     }, [endpoint]);
 
-    function ArrComasList(data) {
-        if (typeof data != "object" || data.length < 1) return data;
-
-        return data.join(", ");
-    }
-
-    function ChapterList(data) {
-        if (typeof data != "object" || data.length < 1) return data;
-
-        return data.map((item) => (
-            <tr>
-                <td>{item.name}</td>
-                <td>
-                    <div className='d-grid gap-2'>
-                        <Link to={`/chapter/${item.endpoint}`} className="btn btn-secondary">Baca Komik</Link>
-                    </div>
-                </td>
-            </tr>
-        ));
-    }
-
     return (
         <>
-            <Helmet>
-                <title>{`Manga Reader • ${komik.title}`}</title>
-            </Helmet>
+            {loading ? (
+                // loading animation center vertical
+                <Row>
+                    <div className="d-flex justify-content-center align-items-center" style={{ minHeight: "100vh" }}>
+                        <div className="spinner-border" role="status">
+                            <span className="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </Row>
+            ) : (
+                <>
+                    <Helmet>
+                        <title>{`Manga Reader • ${komik.title}`}</title>
+                    </Helmet>
 
-            <Row className="mt-4 justify-content-center">
-                <Col>
-                    <h1>{komik.title}</h1>
-                </Col>
-            </Row>
+                    <Row className="mt-4 justify-content-center">
+                        <Col>
+                            <h1>{komik.title}</h1>
+                        </Col>
+                    </Row>
 
-            <hr />
-            <Row className="mt-4">
-                <Col md={4}>
-                    <Image src={komik.thumb} onError={ImageOnError} fluid />
-                </Col>
+                    <hr />
+                    <Row className="mt-4">
+                        <Col md={4}>
+                            <Image src={komik.thumb} onError={ImageOnError} fluid />
+                        </Col>
 
-                <Col md={8}>
-                    <ListGroup>
-                        <ListGroup.Item><b>Judul:</b> {komik.title}</ListGroup.Item>
-                        <ListGroup.Item><b>Alternatif:</b> {ArrComasList(komik.alter)}</ListGroup.Item>
-                        <ListGroup.Item><b>Status:</b> {komik.status}</ListGroup.Item>
-                        <ListGroup.Item><b>Author:</b> {komik.author}</ListGroup.Item>
-                        <ListGroup.Item><b>Illustrator:</b> {komik.illustrator} </ListGroup.Item>
-                        <ListGroup.Item><b>Genre:</b> {ArrComasList(komik.genre)}</ListGroup.Item>
-                        <ListGroup.Item><b>Sinopsis:</b>
-                            <br />
-                            <p>
-                                {komik.synopsis}
-                            </p>
-                        </ListGroup.Item>
-                    </ListGroup>
-                </Col>
-            </Row>
+                        <Col md={8}>
+                            <ListGroup>
+                                <ListGroup.Item><b>Judul:</b> {komik.title}</ListGroup.Item>
+                                <ListGroup.Item><b>Alternatif:</b> {ArrComasList(komik.alter)}</ListGroup.Item>
+                                <ListGroup.Item><b>Status:</b> {komik.status}</ListGroup.Item>
+                                <ListGroup.Item><b>Author:</b> {komik.author}</ListGroup.Item>
+                                <ListGroup.Item><b>Illustrator:</b> {komik.illustrator} </ListGroup.Item>
+                                <ListGroup.Item><b>Genre:</b> {ArrComasList(komik.genre)}</ListGroup.Item>
+                                <ListGroup.Item><b>Sinopsis:</b>
+                                    <br />
+                                    <p>
+                                        {komik.synopsis}
+                                    </p>
+                                </ListGroup.Item>
+                            </ListGroup>
+                        </Col>
+                    </Row>
 
-            <Row className="mt-4 justify-content-center">
-                <Col>
-                    <h1>Chapter List</h1>
-                </Col>
-            </Row>
-            <hr />
+                    <Row className="mt-4 justify-content-center">
+                        <Col>
+                            <h1>Chapter List</h1>
+                        </Col>
+                    </Row>
+                    <hr />
 
-            <Row>
-                <Col sm={12} style={{ overflowY: 'scroll', 'height': '400px' }}>
-                    <Table striped cellSpacing={0}>
-                        <tbody>
-                            {ChapterList(komik.chapters)}
-                        </tbody>
-                    </Table>
-                </Col>
-            </Row>
+                    <Row>
+                        <Col sm={12} style={{ overflowY: 'scroll', 'height': '400px' }}>
+                            <Table striped cellSpacing={0}>
+                                <tbody>
+                                    {ChapterList(komik.chapters)}
+                                </tbody>
+                            </Table>
+                        </Col>
+                    </Row>
+
+                </>
+            )}
         </>
     )
 }
