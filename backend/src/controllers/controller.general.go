@@ -70,13 +70,10 @@ func Home(c *gin.Context) {
 		var lastChapterEndpoint = strings.Replace(lastChapterUrl, "https://komikindo.id/", "", -1)
 
 		homeResponse.HomePopular = append(homeResponse.HomePopular, structure.HomePopular{
-			Name:  name,
-			Thumb: thumb,
-			Url: structure.DetailData{
-				Name:     name,
-				Url:      url,
-				Endpoint: endpoint,
-			},
+			Name:       name,
+			Thumb:      strings.Replace(thumb, "https://", "https://cdn.statically.io/img/", -1),
+			Url:        url,
+			Endpoint:   endpoint,
 			LastUpload: lastUpload,
 			LastChapter: []structure.DetailData{
 				{
@@ -95,13 +92,10 @@ func Home(c *gin.Context) {
 		var endpoint = strings.Replace(url, "https://komikindo.id/", "", -1)
 
 		homeResponse.HomeLatest = append(homeResponse.HomeLatest, structure.HomeLatest{
-			Name:  name,
-			Thumb: thumb,
-			Url: structure.DetailData{
-				Name:     name,
-				Url:      url,
-				Endpoint: endpoint,
-			},
+			Name:     name,
+			Thumb:    strings.Replace(thumb, "https://", "https://cdn.statically.io/img/", -1),
+			Url:      url,
+			Endpoint: endpoint,
 		})
 	})
 
@@ -142,15 +136,10 @@ func ListKomik(c *gin.Context) {
 		var endpoint = strings.Replace(url, "https://komikindo.id/", "", -1)
 
 		listKomikResponse.Komik = append(listKomikResponse.Komik, structure.ListKomik{
-			Name:  name,
-			Thumb: thumb,
-			Url: []structure.DetailData{
-				{
-					Name:     name,
-					Url:      url,
-					Endpoint: endpoint,
-				},
-			},
+			Name:     name,
+			Thumb:    thumb,
+			Url:      url,
+			Endpoint: endpoint,
 		})
 	})
 
@@ -203,15 +192,10 @@ func ListKomikTerbaru(c *gin.Context) {
 		var endpoint = strings.Replace(url, "https://komikindo.id/", "", -1)
 
 		listKomikResponse.Komik = append(listKomikResponse.Komik, structure.ListKomik{
-			Name:  name,
-			Thumb: thumb,
-			Url: []structure.DetailData{
-				{
-					Name:     name,
-					Url:      url,
-					Endpoint: endpoint,
-				},
-			},
+			Name:     name,
+			Thumb:    thumb,
+			Url:      url,
+			Endpoint: endpoint,
 		})
 	})
 
@@ -271,15 +255,10 @@ func SearchKomik(c *gin.Context) {
 		var endpoint = strings.Replace(url, "https://komikindo.id/", "", -1)
 
 		SearchKomikResponse.Komik = append(SearchKomikResponse.Komik, structure.ListKomik{
-			Name:  name,
-			Thumb: thumb,
-			Url: []structure.DetailData{
-				{
-					Name:     name,
-					Url:      url,
-					Endpoint: endpoint,
-				},
-			},
+			Name:     name,
+			Thumb:    thumb,
+			Url:      url,
+			Endpoint: endpoint,
 		})
 	})
 

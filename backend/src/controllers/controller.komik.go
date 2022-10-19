@@ -44,7 +44,7 @@ func KomikDetail(c *gin.Context) {
 	KomikResponse.Author = strings.Split(detail.Find(".spe > span").Eq(2).Text(), ": ")[1]
 	KomikResponse.Illustrator = strings.Split(detail.Find(".spe > span").Eq(3).Text(), ": ")[1]
 	KomikResponse.Grafis = strings.Split(detail.Find(".spe > span").Eq(4).Text(), ": ")[1]
-	KomikResponse.Scores = strings.Split(detail.Find(".spe > span").Eq(5).Text(), ": ")[1]
+	// KomikResponse.Scores = strings.Split(detail.Find(".spe > span").Eq(5).Text(), ": ")[1]
 
 	detail.Find(".genre-info").Children().Each(func(i int, s *goquery.Selection) {
 		KomikResponse.Genre = append(KomikResponse.Genre, s.Text())
@@ -130,6 +130,28 @@ func ChapterDetail(c *gin.Context) {
 		chapterLink.Each(func(i int, s *goquery.Selection) {
 			KomikChapter.Images = append(KomikChapter.Images, s.AttrOr("src", ""))
 		})
+	}
+
+	nav := doc.Find(".navig > .nextprev")
+
+	var prev = nav.Find("[rel='prev']")
+	if prev.Length() != 0 {
+		prev = prev.First()
+		KomikChapter.PrevChapter = structures.DetailData{
+			Name:     prev.Text(),
+			Url:      prev.AttrOr("href", ""),
+			Endpoint: strings.Replace(prev.AttrOr("href", ""), util.GetKeyEnv("BASEURL"), "", -1),
+		}
+	}
+
+	var next = nav.Find("[rel='next']")
+	if next.Length() != 0 {
+		next = next.First()
+		KomikChapter.NextChapter = structures.DetailData{
+			Name:     next.Text(),
+			Url:      next.AttrOr("href", ""),
+			Endpoint: strings.Replace(next.AttrOr("href", ""), util.GetKeyEnv("BASEURL"), "", -1),
+		}
 	}
 
 	c.JSON(200, structures.Success{

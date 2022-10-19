@@ -6,7 +6,8 @@ export default function NavbarComponent() {
         <>
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">
+
+                    <Navbar.Brand href='/'>
                         <img
                             alt=""
                             src="/favicon.ico"
@@ -14,7 +15,7 @@ export default function NavbarComponent() {
                             height="30"
                             className="d-inline-block align-top"
                         />{' '}
-                        React Bootstrap
+                        Manga Reader
                     </Navbar.Brand>
                 </Container>
             </Navbar>
