@@ -39,7 +39,11 @@ const Header = () => {
                 </div>
             </nav>
             
-            <div className='nav-mobile-container'></div>
+            <div className='nav-mobile-container'>
+                <Link className='nav-anchor' to="/home">Home</Link>
+                <Link className='nav-anchor' to="/bookmarks">Bookmarks</Link>
+                <Link className='nav-anchor' to="/comics">Comics</Link>
+            </div>
         </>
     )
 }

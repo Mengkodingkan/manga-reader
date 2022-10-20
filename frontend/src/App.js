@@ -5,7 +5,6 @@ import Home from './component/home';
 import Bookmarks from './component/bookmarks';
 import Comics from './component/comics';
 import './component/assets/css/styles.css';
-// import { BrowserRouter } from 'react-router-dom';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
