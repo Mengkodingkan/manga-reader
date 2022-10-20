@@ -91,7 +91,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(1) > .image-con
 }
 
 nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .search-container {
-    width: 75%;
+    width: 70%;
     height: 100%;
     border: 1px solid rgba(255, 255, 255, .1);
     display: flex;
@@ -165,8 +165,8 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
 .nav-mobile-container {
     position: fixed;
     z-index: 99999;
-    left: -100vh;
-    right: 100vh;
+    left: -100vw;
+    right: 100vw;
     top: 70px;
     bottom: 0;
     background-color: #262a32;
@@ -183,12 +183,60 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     right: 0;
 }
 
+/* carousel */
+.carousel-container {
+    width: 100%;
+    height: 600px;
+    margin: 125px auto 10px;
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-direction: column;
+}
+.carousel-container > .carousel-image {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    overflow-x: hidden;
+    list-style: none;
+}
+
+.carousel-container > .carousel-image > .image {
+    min-width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.carousel-container > .carousel-image > .image:nth-child(1) {
+    background-color: rgba(250, 128, 114, .4);
+}
+
+.carousel-container > .carousel-image > .image:nth-child(2) {
+    background-color: rgba(0, 255, 255, .4);
+}
+
+.carousel-container > .carousel-image > .image:nth-child(3) {
+    background-color: rgba(238, 130, 238, .4);
+}
+
 @media screen and (min-width: 1921px) {
     nav > .navbar > .navbar-top > .navbar-container,
     nav > .navbar > .navbar-bottom > .navbar-container {
         width: 1200px;
     }
 
+}
+
+@media screen and (max-width: 1920px) {
+    .carousel-container {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .carousel-container {
+        height: 400px;
+    }
 }
 
 @media screen and (max-width: 890px) {
@@ -253,4 +301,28 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) {
         padding: 17px 10px;
     }
+
+    .carousel-container {
+        margin: 75px auto 10px;
+        height: 250px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
 }

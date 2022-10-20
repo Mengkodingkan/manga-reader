@@ -31,7 +31,7 @@ const Header = () => {
                     </div>
                     <div className="navbar-bottom">
                         <div className="navbar-container">
-                            <Link className='nav-anchor' to="/home">Home</Link>
+                            <Link className='nav-anchor' to="/">Home</Link>
                             <Link className='nav-anchor' to="/bookmarks">Bookmarks</Link>
                             <Link className='nav-anchor' to="/comics">Comics</Link>
                         </div>
@@ -40,7 +40,7 @@ const Header = () => {
             </nav>
             
             <div className='nav-mobile-container'>
-                <Link className='nav-anchor' to="/home">Home</Link>
+                <Link className='nav-anchor' to="/">Home</Link>
                 <Link className='nav-anchor' to="/bookmarks">Bookmarks</Link>
                 <Link className='nav-anchor' to="/comics">Comics</Link>
             </div>
