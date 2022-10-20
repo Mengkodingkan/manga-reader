@@ -15,7 +15,9 @@ type KomikResponse struct {
 }
 
 type KomikChapter struct {
-	Title  string   `json:"title"`
-	Thumb  string   `json:"thumb"`
-	Images []string `json:"images"`
+	Title       string     `json:"title"`
+	Thumb       string     `json:"thumb"`
+	Images      []string   `json:"images"`
+	PrevChapter DetailData `json:"prevChapter"`
+	NextChapter DetailData `json:"nextChapter"`
 }
