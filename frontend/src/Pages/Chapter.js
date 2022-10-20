@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import Image from "react-bootstrap/Image";
 
 async function getChapter(endpoint) {
-    const response = await fetch(`http://localhost:3568/api/v1/chapter/${endpoint}`);
+    const response = await fetch(`http://localhost:3568/api/v1/komikindo/chapter/${endpoint}`);
     const json = await response.json();
 
     return json.data;

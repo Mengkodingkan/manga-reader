@@ -1,17 +1,17 @@
-package controllers
+package komikindo
 
 import (
 	"fmt"
 	"strings"
 
-	http "Mengkodingkan.com/manga-reader/src/Util"
+	http "Mengkodingkan.com/manga-reader/src/http"
 	structure "Mengkodingkan.com/manga-reader/src/structures"
 	"github.com/PuerkitoBio/goquery"
 	"github.com/gin-gonic/gin"
 )
 
 func Ping(c *gin.Context) {
-	resp := http.Get("http://komikindo.id/")
+	resp := http.Get("https://komikindo.id")
 
 	if resp.StatusCode != 200 {
 		c.JSON(500, gin.H{

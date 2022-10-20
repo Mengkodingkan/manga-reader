@@ -8,7 +8,7 @@ import Table from "react-bootstrap/Table";
 import Helmet from "react-helmet";
 
 async function getKomik(endpoint) {
-    const response = await fetch(`http://localhost:3568/api/v1/komik/${endpoint}`);
+    const response = await fetch(`http://localhost:3568/api/v1/komikindo/komik/${endpoint}`);
     const json = await response.json();
 
     return json.data;

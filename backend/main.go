@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	route "Mengkodingkan.com/manga-reader/src/routes"
+	"Mengkodingkan.com/manga-reader/src/routes/komikindo"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
@@ -20,8 +20,8 @@ func RouterInit() *gin.Engine {
 	router.Use(cors.Default())
 
 	RouteApi := router.Group("/api/v1")
-	route.General(RouteApi)
-	route.Komik(RouteApi)
+	KomikindoRoute := RouteApi.Group("/komikindo")
+	komikindo.Routes(KomikindoRoute)
 
 	router.NoRoute(func(c *gin.Context) {
 		c.JSON(404, gin.H{"status": "error", "message": "Path not found"})

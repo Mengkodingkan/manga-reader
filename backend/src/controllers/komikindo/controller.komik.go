@@ -1,9 +1,10 @@
-package controllers
+package komikindo
 
 import (
 	"strings"
 
 	util "Mengkodingkan.com/manga-reader/src/Util"
+	http "Mengkodingkan.com/manga-reader/src/http"
 	"Mengkodingkan.com/manga-reader/src/structures"
 	"github.com/PuerkitoBio/goquery"
 	"github.com/gin-gonic/gin"
@@ -19,7 +20,7 @@ func KomikDetail(c *gin.Context) {
 		})
 	}
 
-	resp := util.Get(util.GetKeyEnv("BASEURL") + "/komik/" + endpoint)
+	resp := http.Get(util.GetKeyEnv("BASEURL") + "/komik/" + endpoint)
 	if resp.StatusCode != 200 {
 		c.JSON(500, structures.Error{
 			Status:  "error",
@@ -77,7 +78,7 @@ func ChapterDetail(c *gin.Context) {
 		})
 	}
 
-	resp := util.Get(util.GetKeyEnv("BASEURL") + endpoint)
+	resp := http.Get(util.GetKeyEnv("BASEURL") + endpoint)
 	if resp.StatusCode != 200 {
 		c.JSON(500, structures.Error{
 			Status:  "error",
@@ -102,7 +103,7 @@ func ChapterDetail(c *gin.Context) {
 	if chapterLink.Length() == 0 {
 		var alternateLink = doc.Find("head").Find("link[type='application/json']").AttrOr("href", "")
 
-		resp := util.Get(alternateLink)
+		resp := http.Get(alternateLink)
 		if resp.StatusCode != 200 {
 			c.JSON(500, structures.Error{
 				Status:  "error",

@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 import { Helmet } from 'react-helmet';
 
 async function getKomik() {
-    const response = await fetch('http://localhost:3568/api/v1/home');
+    const response = await fetch('http://localhost:3568/api/v1/komikindo/home');
     const json = await response.json();
 
     return json.data;
