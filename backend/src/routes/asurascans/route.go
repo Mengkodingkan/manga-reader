@@ -1,5 +1,10 @@
 package asurascans
 
-// func Routes(router *gin.RouterGroup) {
-// 	router.GET("/", controller.Ping)
-// }
+import (
+	controller "Mengkodingkan.com/manga-reader/src/controllers/asurascans"
+	"github.com/gin-gonic/gin"
+)
+
+func Routes(router *gin.RouterGroup) {
+	router.GET("/", controller.Ping)
+}
