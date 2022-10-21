@@ -1,5 +1,6 @@
 import Header from './header';
 import ComicsImage from './assets/img/carousel-1.jpg';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -128,7 +129,248 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='update-lates'></div>
+                    <div className='update-lates'>
+                        <div className="desc">
+                            <div className="item">
+                                <h5>Lates Update</h5>
+                            </div>
+                            <div className="item">
+                                <Link to="/" className='btn-detail'>VIEW ALL</Link>
+                            </div>
+                        </div>
+                        <div className="box">
+                            <div className='item'>
+                                <div className='items'>
+                                    <div className="image-container">
+                                        <img src={ComicsImage} alt="" />
+                                    </div>
+                                    <div className="desc-container">
+                                        <div className='title'>
+                                            <Link to="/" className='a-2'>Never Die Extra</Link>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='items'>
+                                    <div className="image-container">
+                                        <img src={ComicsImage} alt="" />
+                                    </div>
+                                    <div className="desc-container">
+                                        <div className='title'>
+                                            <Link to="/" className='a-2'>Never Die Extra</Link>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='items'>
+                                    <div className="image-container">
+                                        <img src={ComicsImage} alt="" />
+                                    </div>
+                                    <div className="desc-container">
+                                        <div className='title'>
+                                            <Link to="/" className='a-2'>Never Die Extra</Link>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='items'>
+                                    <div className="image-container">
+                                        <img src={ComicsImage} alt="" />
+                                    </div>
+                                    <div className="desc-container">
+                                        <div className='title'>
+                                            <Link to="/" className='a-2'>Never Die Extra</Link>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='items'>
+                                    <div className="image-container">
+                                        <img src={ComicsImage} alt="" />
+                                    </div>
+                                    <div className="desc-container">
+                                        <div className='title'>
+                                            <Link to="/" className='a-2'>Never Die Extra</Link>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='items'>
+                                    <div className="image-container">
+                                        <img src={ComicsImage} alt="" />
+                                    </div>
+                                    <div className="desc-container">
+                                        <div className='title'>
+                                            <Link to="/" className='a-2'>Never Die Extra</Link>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='items'>
+                                    <div className="image-container">
+                                        <img src={ComicsImage} alt="" />
+                                    </div>
+                                    <div className="desc-container">
+                                        <div className='title'>
+                                            <Link to="/" className='a-2'>Never Die Extra</Link>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='items'>
+                                    <div className="image-container">
+                                        <img src={ComicsImage} alt="" />
+                                    </div>
+                                    <div className="desc-container">
+                                        <div className='title'>
+                                            <Link to="/" className='a-2'>Never Die Extra</Link>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='items'>
+                                    <div className="image-container">
+                                        <img src={ComicsImage} alt="" />
+                                    </div>
+                                    <div className="desc-container">
+                                        <div className='title'>
+                                            <Link to="/" className='a-2'>Never Die Extra</Link>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='items'>
+                                    <div className="image-container">
+                                        <img src={ComicsImage} alt="" />
+                                    </div>
+                                    <div className="desc-container">
+                                        <div className='title'>
+                                            <Link to="/" className='a-2'>Never Die Extra</Link>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className='sidebar'></div>
             </div>
