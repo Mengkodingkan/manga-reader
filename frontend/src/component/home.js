@@ -1,5 +1,7 @@
 import Header from './header';
 import ComicsImage from './assets/img/carousel-1.jpg';
+import ComicsImage2 from './assets/img/1.webp'
+import ComicsImage3 from './assets/img/2.png'
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -20,7 +22,7 @@ const Home = () => {
                     <div className='popular'>
                         <div className='box'>
                             <div className='image-container'>
-                                <img src={ComicsImage} alt="" />
+                                <img src={ComicsImage2} alt="" />
                                 <div className='hover'></div>
                             </div>
                             <div className='desc-container'>
@@ -42,7 +44,7 @@ const Home = () => {
                         </div>
                         <div className='box'>
                             <div className='image-container'>
-                                <img src={ComicsImage} alt="" />
+                                <img src={ComicsImage2} alt="" />
                                 <div className='hover'></div>
                             </div>
                             <div className='desc-container'>
@@ -64,7 +66,7 @@ const Home = () => {
                         </div>
                         <div className='box'>
                             <div className='image-container'>
-                                <img src={ComicsImage} alt="" />
+                                <img src={ComicsImage2} alt="" />
                                 <div className='hover'></div>
                             </div>
                             <div className='desc-container'>
@@ -86,7 +88,7 @@ const Home = () => {
                         </div>
                         <div className='box'>
                             <div className='image-container'>
-                                <img src={ComicsImage} alt="" />
+                                <img src={ComicsImage2} alt="" />
                                 <div className='hover'></div>
                             </div>
                             <div className='desc-container'>
@@ -108,7 +110,7 @@ const Home = () => {
                         </div>
                         <div className='box'>
                             <div className='image-container'>
-                                <img src={ComicsImage} alt="" />
+                                <img src={ComicsImage2} alt="" />
                                 <div className='hover'></div>
                             </div>
                             <div className='desc-container'>
@@ -372,7 +374,118 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='sidebar'></div>
+                <div className='sidebar'>
+                    <div className='desc'>
+                        <h5>Popular</h5>
+                    </div>
+                    <div className='box'>
+                        <div className='a-4'>
+                            <ul className='a-6'>
+                                <li className='a-7 active'>
+                                    <Link to="/" className='a-8'>Weekly</Link>
+                                </li>
+                                <li className='a-7'>
+                                    <Link to="/" className='a-8'>Monthly</Link>
+                                </li>
+                                <li className='a-7'>
+                                    <Link to="/" className='a-8'>All</Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className='a-5'>
+                            <div className="item">
+                                <div className='number'>
+                                    <h5>1</h5>
+                                </div>
+                                <div className='image-container'>
+                                    <img src={ComicsImage3} alt="" />
+                                </div>
+                                <div className='desc-container'></div>
+                            </div>
+                            <div className="item">
+                                <div className='number'>
+                                    <h5>2</h5>
+                                </div>
+                                <div className='image-container'>
+                                    <img src={ComicsImage3} alt="" />
+                                </div>
+                                <div className='desc-container'></div>
+                            </div>
+                            <div className="item">
+                                <div className='number'>
+                                    <h5>3</h5>
+                                </div>
+                                <div className='image-container'>
+                                    <img src={ComicsImage3} alt="" />
+                                </div>
+                                <div className='desc-container'></div>
+                            </div>
+                            <div className="item">
+                                <div className='number'>
+                                    <h5>4</h5>
+                                </div>
+                                <div className='image-container'>
+                                    <img src={ComicsImage3} alt="" />
+                                </div>
+                                <div className='desc-container'></div>
+                            </div>
+                            <div className="item">
+                                <div className='number'>
+                                    <h5>5</h5>
+                                </div>
+                                <div className='image-container'>
+                                    <img src={ComicsImage3} alt="" />
+                                </div>
+                                <div className='desc-container'></div>
+                            </div>
+                            <div className="item">
+                                <div className='number'>
+                                    <h5>6</h5>
+                                </div>
+                                <div className='image-container'>
+                                    <img src={ComicsImage3} alt="" />
+                                </div>
+                                <div className='desc-container'></div>
+                            </div>
+                            <div className="item">
+                                <div className='number'>
+                                    <h5>7</h5>
+                                </div>
+                                <div className='image-container'>
+                                    <img src={ComicsImage3} alt="" />
+                                </div>
+                                <div className='desc-container'></div>
+                            </div>
+                            <div className="item">
+                                <div className='number'>
+                                    <h5>8</h5>
+                                </div>
+                                <div className='image-container'>
+                                    <img src={ComicsImage3} alt="" />
+                                </div>
+                                <div className='desc-container'></div>
+                            </div>
+                            <div className="item">
+                                <div className='number'>
+                                    <h5>9</h5>
+                                </div>
+                                <div className='image-container'>
+                                    <img src={ComicsImage3} alt="" />
+                                </div>
+                                <div className='desc-container'></div>
+                            </div>
+                            <div className="item">
+                                <div className='number'>
+                                    <h5>10</h5>
+                                </div>
+                                <div className='image-container'>
+                                    <img src={ComicsImage3} alt="" />
+                                </div>
+                                <div className='desc-container'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     )
