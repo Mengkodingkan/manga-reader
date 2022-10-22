@@ -425,7 +425,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
 
 .contents > .main-contents > .update-lates > .box > .item > .items {
     width: 50%;
-    height: 170px;
+    height: 175px;
     /* border: 1px solid #fff; */
     display: flex;
     gap: 10px;
@@ -590,7 +590,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     min-height: 100px;
     /* padding: 10px; */
     display: flex;
-    gap: 5px;
+    gap: 15px;
     padding: 0 10px;
 }
 
@@ -637,7 +637,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     /* border: 1px solid #fff; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     gap: 5px;
 }
 
@@ -744,6 +744,90 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     }
 }
 
+@media screen and (max-width: 1220px) {
+    .contents > .main-contents > .popular {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 350px;
+        grid-auto-rows: 350px;
+    }
+
+    .contents > .sidebar > .box > .a-5 > .item > .image-container {
+        padding: 10px;
+        /* border: 1px solid #fff; */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contents > .main-contents > .update-lates > .box > .item > .items {
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .contents > .main-contents > .popular {
+        grid-template-rows: 330px;
+        grid-auto-rows: 330px;
+    }
+
+    .contents > .main-contents > .update-lates > .box > .item > .items {
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .contents > .sidebar > .box > .a-5 > .item > .image-container {
+        padding: 15px 10px;
+        /* border: 1px solid #fff; */
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contents > .main-contents > .popular {
+        grid-template-rows: 310px;
+        grid-auto-rows: 310px;
+    }
+
+    .contents > .sidebar > .box > .a-5 > .item > .image-container {
+        padding: 15px 0;
+    }
+}
+
+@media screen and (max-width: 974px) {
+    .contents > .main-contents {
+        width: 60%;
+    }
+
+    .contents > .sidebar {
+        width: 40%;
+    }
+
+    .contents > .main-contents > .popular {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contents > .main-contents > .update-lates > .box > .item {
+        flex-wrap: wrap;
+    }
+
+    .contents > .main-contents > .update-lates > .box > .item > .items {
+        width: 100%;
+        height: 195px;
+        /* border: 1px solid #fff; */
+    }
+
+    .contents > .main-contents > .update-lates > .box > .item > .items > .desc-container > .title > .a-2 {
+        font-size: 16px;
+    }
+
+    .contents > .main-contents > .update-lates > .box > .item > .items > .desc-container > .a-1 > .a-3 {
+        font-size: 14px;
+    }
+
+    .contents > .main-contents > .update-lates > .box > .item > .items > .desc-container > .a-1 > h5 {
+        font-size: 13px;
+    }
+}
+
 @media screen and (max-width: 890px) {
     nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .search-container {
         width: 80%;
@@ -757,29 +841,12 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
         width: 15%;
     }
 
-    .contents > .main-contents {
-        width: 60%;
-    }
-
-    .contents > .sidebar {
-        width: 40%;
-    }
-
     .contents > .main-contents > .popular {
         grid-template-columns: repeat(3, 1fr);
         grid-auto-flow: row;
         grid-template-rows: 280px;
         grid-auto-rows: 280px;
     }
-
-    .contents > .main-contents > .update-lates > .box > .item {
-        flex-wrap: wrap;
-    }
-
-    .contents > .main-contents > .update-lates > .box > .item > .items {
-        width: 100%;
-    }
-
 }
 
 @media screen and (max-width: 850px) {
@@ -791,8 +858,41 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     .contents > .main-contents > .popular {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-flow: row;
-        grid-template-rows: 280px;
-        grid-auto-rows: 280px;
+        grid-template-rows: 350px;
+        grid-auto-rows: 350px;
+    }
+
+    .contents > .main-contents > .update-lates > .box > .item > .items {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contents > .main-contents > .popular {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: row;
+        grid-template-rows: 320px;
+        grid-auto-rows: 320px;
+    }
+
+    .contents > .main-contents > .popular > .box > .image-container {
+        height: 55%;
+    }
+
+    .contents > .main-contents > .popular > .box > .desc-container {
+        height: 45%;
+    }
+
+    .contents > .main-contents > .update-lates > .box > .item > .items {
+        height: 120px;
+    }
+
+    .contents > .main-contents > .update-lates > .box > .item > .items > .desc-container > .title > .a-2 {
+        font-size: 12.5px;
+    }
+
+    .contents > .main-contents > .update-lates > .box > .item > .items > .desc-container > .a-1 > .a-3 {
+        font-size: 11px;
     }
 }
 
@@ -865,6 +965,36 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
         grid-auto-flow: row;
         grid-template-rows: 320px;
         grid-auto-rows: 320px;
+    }
+
+    .contents > .main-contents > .popular > .box > .image-container {
+        height: 64%;
+    }
+
+    .contents > .main-contents > .popular > .box > .desc-container {
+        height: 36%;
+    }
+
+    .contents > .main-contents > .update-lates > .box > .item > .items {
+        height: 195px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contents > .main-contents > .update-lates > .box > .item > .items {
+        height: 185px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .contents > .main-contents > .update-lates > .box > .item > .items {
+        height: 165px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .contents > .main-contents > .update-lates > .box > .item > .items {
+        height: 150px;
     }
 }
 
