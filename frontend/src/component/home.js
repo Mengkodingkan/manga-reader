@@ -400,7 +400,26 @@ const Home = () => {
                                 <div className='image-container'>
                                     <img src={ComicsImage3} alt="" />
                                 </div>
-                                <div className='desc-container'></div>
+                                <div className='desc-container'>
+                                    <div className='title'>
+                                        <Link to="/" className='b-1'>Existence</Link>
+                                    </div>
+                                    <div className='genres'>
+                                        <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
+                                    </div>
+                                    <div className='rating'>
+                                        <div className='stars'>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='value'>
+                                            <h5>10</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="item">
                                 <div className='number'>
@@ -409,7 +428,26 @@ const Home = () => {
                                 <div className='image-container'>
                                     <img src={ComicsImage3} alt="" />
                                 </div>
-                                <div className='desc-container'></div>
+                                <div className='desc-container'>
+                                    <div className='title'>
+                                        <Link to="/" className='b-1'>Existence</Link>
+                                    </div>
+                                    <div className='genres'>
+                                        <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
+                                    </div>
+                                    <div className='rating'>
+                                        <div className='stars'>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='value'>
+                                            <h5>10</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="item">
                                 <div className='number'>
@@ -418,7 +456,26 @@ const Home = () => {
                                 <div className='image-container'>
                                     <img src={ComicsImage3} alt="" />
                                 </div>
-                                <div className='desc-container'></div>
+                                <div className='desc-container'>
+                                    <div className='title'>
+                                        <Link to="/" className='b-1'>Existence</Link>
+                                    </div>
+                                    <div className='genres'>
+                                        <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
+                                    </div>
+                                    <div className='rating'>
+                                        <div className='stars'>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='value'>
+                                            <h5>10</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="item">
                                 <div className='number'>
@@ -427,7 +484,26 @@ const Home = () => {
                                 <div className='image-container'>
                                     <img src={ComicsImage3} alt="" />
                                 </div>
-                                <div className='desc-container'></div>
+                                <div className='desc-container'>
+                                    <div className='title'>
+                                        <Link to="/" className='b-1'>Existence</Link>
+                                    </div>
+                                    <div className='genres'>
+                                        <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
+                                    </div>
+                                    <div className='rating'>
+                                        <div className='stars'>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='value'>
+                                            <h5>10</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="item">
                                 <div className='number'>
@@ -436,7 +512,26 @@ const Home = () => {
                                 <div className='image-container'>
                                     <img src={ComicsImage3} alt="" />
                                 </div>
-                                <div className='desc-container'></div>
+                                <div className='desc-container'>
+                                    <div className='title'>
+                                        <Link to="/" className='b-1'>Existence</Link>
+                                    </div>
+                                    <div className='genres'>
+                                        <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
+                                    </div>
+                                    <div className='rating'>
+                                        <div className='stars'>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='value'>
+                                            <h5>10</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="item">
                                 <div className='number'>
@@ -445,7 +540,26 @@ const Home = () => {
                                 <div className='image-container'>
                                     <img src={ComicsImage3} alt="" />
                                 </div>
-                                <div className='desc-container'></div>
+                                <div className='desc-container'>
+                                    <div className='title'>
+                                        <Link to="/" className='b-1'>Existence</Link>
+                                    </div>
+                                    <div className='genres'>
+                                        <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
+                                    </div>
+                                    <div className='rating'>
+                                        <div className='stars'>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='value'>
+                                            <h5>10</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="item">
                                 <div className='number'>
@@ -454,7 +568,26 @@ const Home = () => {
                                 <div className='image-container'>
                                     <img src={ComicsImage3} alt="" />
                                 </div>
-                                <div className='desc-container'></div>
+                                <div className='desc-container'>
+                                    <div className='title'>
+                                        <Link to="/" className='b-1'>Existence</Link>
+                                    </div>
+                                    <div className='genres'>
+                                        <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
+                                    </div>
+                                    <div className='rating'>
+                                        <div className='stars'>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='value'>
+                                            <h5>10</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="item">
                                 <div className='number'>
@@ -463,7 +596,26 @@ const Home = () => {
                                 <div className='image-container'>
                                     <img src={ComicsImage3} alt="" />
                                 </div>
-                                <div className='desc-container'></div>
+                                <div className='desc-container'>
+                                    <div className='title'>
+                                        <Link to="/" className='b-1'>Existence</Link>
+                                    </div>
+                                    <div className='genres'>
+                                        <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
+                                    </div>
+                                    <div className='rating'>
+                                        <div className='stars'>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='value'>
+                                            <h5>10</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="item">
                                 <div className='number'>
@@ -472,7 +624,26 @@ const Home = () => {
                                 <div className='image-container'>
                                     <img src={ComicsImage3} alt="" />
                                 </div>
-                                <div className='desc-container'></div>
+                                <div className='desc-container'>
+                                    <div className='title'>
+                                        <Link to="/" className='b-1'>Existence</Link>
+                                    </div>
+                                    <div className='genres'>
+                                        <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
+                                    </div>
+                                    <div className='rating'>
+                                        <div className='stars'>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='value'>
+                                            <h5>10</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="item">
                                 <div className='number'>
@@ -481,7 +652,26 @@ const Home = () => {
                                 <div className='image-container'>
                                     <img src={ComicsImage3} alt="" />
                                 </div>
-                                <div className='desc-container'></div>
+                                <div className='desc-container'>
+                                    <div className='title'>
+                                        <Link to="/" className='b-1'>Existence</Link>
+                                    </div>
+                                    <div className='genres'>
+                                        <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
+                                    </div>
+                                    <div className='rating'>
+                                        <div className='stars'>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='value'>
+                                            <h5>10</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
