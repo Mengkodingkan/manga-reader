@@ -191,7 +191,29 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     /* border: 1px solid #fff; */
     display: flex;
     flex-direction: column;
+    position: relative;
 }
+
+.carousel-container > .btn-slide-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 10px;
+}
+
+.carousel-container > .btn-slide-container > .btn-slide {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ffd700;
+    border-radius: 50%;
+    transition: 1s;
+}
+
 .carousel-container > .carousel-image {
     width: 100%;
     height: 100%;
@@ -199,24 +221,25 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     display: flex;
     overflow-x: hidden;
     list-style: none;
+    position: relative;
 }
 
 .carousel-container > .carousel-image > .image {
     min-width: 100%;
     height: 100%;
-    transition: .5s;
+    transition: 1s;
 }
 
 .carousel-container > .carousel-image > .image:nth-child(1) {
-    background-color: rgba(57, 49, 48, 0.4);
+    background-color: rgb(238, 130, 238);
 }
 
 .carousel-container > .carousel-image > .image:nth-child(2) {
-    background-color: rgba(0, 255, 255, .4);
+    background-color: rgb(0, 255, 255);
 }
 
 .carousel-container > .carousel-image > .image:nth-child(3) {
-    background-color: rgba(238, 130, 238, .4);
+    background-color: rgb(250, 128, 114);
 }
 
 /* contents */

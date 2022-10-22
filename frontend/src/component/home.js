@@ -2,7 +2,48 @@ import Header from './header';
 import ComicsImage from './assets/img/carousel-1.jpg';
 import ComicsImage2 from './assets/img/1.webp'
 import ComicsImage3 from './assets/img/2.png'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; 
+
+const slide1 = () => {
+    document.getElementsByClassName('first')[0].style.marginLeft = '0';
+    document.getElementsByClassName('c-1')[0].style.backgroundColor = '#ffd700';
+    document.getElementsByClassName('c-2')[0].style.backgroundColor = 'rgba(255, 215, 0, 0)';
+    document.getElementsByClassName('c-3')[0].style.backgroundColor = 'rgba(255, 215, 0, 0)';
+}
+
+const slide2 = () => {
+    document.getElementsByClassName('first')[0].style.marginLeft = '-100%';
+    document.getElementsByClassName('c-1')[0].style.backgroundColor = 'rgba(255, 215, 0, 0)';
+    document.getElementsByClassName('c-2')[0].style.backgroundColor = '#ffd700';
+    document.getElementsByClassName('c-3')[0].style.backgroundColor = 'rgba(255, 215, 0, 0)';
+}
+
+const slide3 = () => {
+    document.getElementsByClassName('first')[0].style.marginLeft = '-200%';
+    document.getElementsByClassName('c-1')[0].style.backgroundColor = 'rgba(255, 215, 0, 0)';
+    document.getElementsByClassName('c-2')[0].style.backgroundColor = 'rgba(255, 215, 0, 0)';
+    document.getElementsByClassName('c-3')[0].style.backgroundColor = '#ffd700';
+}
+
+const carouselActive = () => {
+    let count = 1;
+    setInterval(() => {
+        count++;
+        if(count > 3) {
+            count = 1;
+        };
+
+        if(count === 1) {
+            slide1();
+        } else if(count === 2) {
+            slide2();
+        } else if(count === 3) {
+            slide3();
+        };
+
+    }, 7000);
+
+}
 
 const Home = () => {
     return (
@@ -11,10 +52,15 @@ const Home = () => {
             
             <div className='carousel-container'>
                 <ul className='carousel-image'>
-                    <li className='image first'></li>
+                    <li className='image first' carouselActive={carouselActive()}></li>
                     <li className='image'></li>
                     <li className='image'></li>
                 </ul>
+                <div className='btn-slide-container'>
+                    <div className='btn-slide c-1'></div>
+                    <div className='btn-slide c-2'></div>
+                    <div className='btn-slide c-3'></div>
+                </div>
             </div>
 
             <div className='contents'>
@@ -30,11 +76,11 @@ const Home = () => {
                                 <h5>Chapter 20</h5>
                                 <div className='rating'>
                                     <div className='stars'>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
                                     </div>
                                     <div className='evaluation'>
                                         <h5>10</h5>
@@ -52,11 +98,11 @@ const Home = () => {
                                 <h5>Chapter 20</h5>
                                 <div className='rating'>
                                     <div className='stars'>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
                                     </div>
                                     <div className='evaluation'>
                                         <h5>10</h5>
@@ -74,11 +120,11 @@ const Home = () => {
                                 <h5>Chapter 20</h5>
                                 <div className='rating'>
                                     <div className='stars'>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
                                     </div>
                                     <div className='evaluation'>
                                         <h5>10</h5>
@@ -96,11 +142,11 @@ const Home = () => {
                                 <h5>Chapter 20</h5>
                                 <div className='rating'>
                                     <div className='stars'>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
                                     </div>
                                     <div className='evaluation'>
                                         <h5>10</h5>
@@ -118,11 +164,11 @@ const Home = () => {
                                 <h5>Chapter 20</h5>
                                 <div className='rating'>
                                     <div className='stars'>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
-                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
                                     </div>
                                     <div className='evaluation'>
                                         <h5>10</h5>
@@ -409,11 +455,11 @@ const Home = () => {
                                     </div>
                                     <div className='rating'>
                                         <div className='stars'>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
                                         </div>
                                         <div className='value'>
                                             <h5>10</h5>
@@ -437,11 +483,11 @@ const Home = () => {
                                     </div>
                                     <div className='rating'>
                                         <div className='stars'>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
                                         </div>
                                         <div className='value'>
                                             <h5>10</h5>
@@ -465,11 +511,11 @@ const Home = () => {
                                     </div>
                                     <div className='rating'>
                                         <div className='stars'>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
                                         </div>
                                         <div className='value'>
                                             <h5>10</h5>
@@ -493,11 +539,11 @@ const Home = () => {
                                     </div>
                                     <div className='rating'>
                                         <div className='stars'>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
                                         </div>
                                         <div className='value'>
                                             <h5>10</h5>
@@ -521,11 +567,11 @@ const Home = () => {
                                     </div>
                                     <div className='rating'>
                                         <div className='stars'>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
                                         </div>
                                         <div className='value'>
                                             <h5>10</h5>
@@ -549,11 +595,11 @@ const Home = () => {
                                     </div>
                                     <div className='rating'>
                                         <div className='stars'>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
                                         </div>
                                         <div className='value'>
                                             <h5>10</h5>
@@ -577,11 +623,11 @@ const Home = () => {
                                     </div>
                                     <div className='rating'>
                                         <div className='stars'>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
                                         </div>
                                         <div className='value'>
                                             <h5>10</h5>
@@ -605,11 +651,11 @@ const Home = () => {
                                     </div>
                                     <div className='rating'>
                                         <div className='stars'>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
                                         </div>
                                         <div className='value'>
                                             <h5>10</h5>
@@ -633,11 +679,11 @@ const Home = () => {
                                     </div>
                                     <div className='rating'>
                                         <div className='stars'>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
                                         </div>
                                         <div className='value'>
                                             <h5>10</h5>
@@ -661,11 +707,11 @@ const Home = () => {
                                     </div>
                                     <div className='rating'>
                                         <div className='stars'>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
                                         </div>
                                         <div className='value'>
                                             <h5>10</h5>

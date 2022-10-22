@@ -1,9 +1,10 @@
 import Logo from './assets/img/mengkodingkan-logo.png';
 import {Link} from 'react-router-dom';
 
-const HamburgHandler = () => {
+const hamburgerActive = () => {
     document.getElementsByClassName('nav-mobile-container')[0].classList.toggle('active');
 }
+
 const Header = () => {
     return (
         <>
@@ -19,9 +20,9 @@ const Header = () => {
                             <div className="box">
                                 <div className="search-container">
                                     <input type="text" placeholder="Search"/>
-                                    <button type="submit" className="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button type="submit" className="btn-search"><i className="fa-solid fa-magnifying-glass"></i></button>
                                 </div>
-                                <div className='hamburger-container' onClick={HamburgHandler}>
+                                <div className='hamburger-container' onClick={hamburgerActive}>
                                     <span></span>
                                     <span></span>
                                     <span></span>
