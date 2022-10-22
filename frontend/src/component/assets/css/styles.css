@@ -720,6 +720,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
 .contents > .sidebar > .box > .a-5 > .item > .desc-container > .rating > .value > h5 {
     color: rgb(162, 160, 160);
     font-size: 13px;
+    font-weight: 600;
 }
 
 @media screen and (min-width: 1401px) {
