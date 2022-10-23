@@ -62,6 +62,7 @@ const Home = () => {
                                     <div className='d-1'>
                                         <div className='stars'>
                                             <i className="fa-sharp fa-solid fa-star"></i>
+                                            <h5>10</h5>
                                         </div>
                                         <div className='title'>
                                             <div className='e-1'>
@@ -99,6 +100,7 @@ const Home = () => {
                                     <div className='d-1'>
                                         <div className='stars'>
                                             <i className="fa-sharp fa-solid fa-star"></i>
+                                            <h5>10</h5>
                                         </div>
                                         <div className='title'>
                                             <div className='e-1'>
@@ -136,6 +138,7 @@ const Home = () => {
                                     <div className='d-1'>
                                         <div className='stars'>
                                             <i className="fa-sharp fa-solid fa-star"></i>
+                                            <h5>10</h5>
                                         </div>
                                         <div className='title'>
                                             <div className='e-1'>
