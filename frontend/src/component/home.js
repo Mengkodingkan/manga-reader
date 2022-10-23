@@ -81,7 +81,7 @@ const Home = () => {
                                     </div>
                                     <div className='d-3'>
                                         <h4>SUMMARY</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatum minus repellendus sunt commodi recusandae.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit qui, sunt velit recusandae sit cum nobis, iusto adipisci ipsam consequuntur quidem. Iure eos pariatur perferendis.</p>
                                     </div>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@ const Home = () => {
                                     </div>
                                     <div className='d-3'>
                                         <h4>SUMMARY</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatum minus repellendus sunt commodi recusandae.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit qui, sunt velit recusandae sit cum nobis, iusto adipisci ipsam consequuntur quidem. Iure eos pariatur perferendis.</p>
                                     </div>
                                 </div>
                             </div>
@@ -155,7 +155,7 @@ const Home = () => {
                                     </div>
                                     <div className='d-3'>
                                         <h4>SUMMARY</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatum minus repellendus sunt commodi recusandae.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit qui, sunt velit recusandae sit cum nobis, iusto adipisci ipsam consequuntur quidem. Iure eos pariatur perferendis.</p>
                                     </div>
                                 </div>
                             </div>
