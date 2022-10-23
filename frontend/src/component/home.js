@@ -1,7 +1,10 @@
 import Header from './header';
 import ComicsImage from './assets/img/carousel-1.jpg';
-import ComicsImage2 from './assets/img/1.webp'
-import ComicsImage3 from './assets/img/2.png'
+import ComicsImage2 from './assets/img/1.webp';
+import ComicsImage3 from './assets/img/2.png';
+import ComicsImage4 from './assets/img/6.webp';
+import ComicsImage5 from './assets/img/4.webp';
+import ComicsImage6 from './assets/img/4.jpg';
 import { Link } from 'react-router-dom'; 
 
 const slide1 = () => {
@@ -25,7 +28,7 @@ const slide3 = () => {
     document.getElementsByClassName('c-3')[0].style.backgroundColor = '#ffd700';
 }
 
-const carouselActive = () => {
+const carouselactive = () => {
     let count = 1;
     setInterval(() => {
         count++;
@@ -52,9 +55,42 @@ const Home = () => {
             
             <div className='carousel-container'>
                 <ul className='carousel-image'>
-                    <li className='image first' carouselActive={carouselActive()}></li>
-                    <li className='image'></li>
-                    <li className='image'></li>
+                    <li className='image first' carousel={carouselactive()}>
+                        <div className="hover2">
+                            <div className='box'>
+                                <div className='desc-container'></div>
+                            </div>
+                            <div className='box'>
+                                <div className='image-container'>
+                                    <img src={ComicsImage4} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li className='image'>
+                        <div className="hover2">
+                            <div className='box'>
+                                <div className='desc-container'></div>
+                            </div>
+                            <div className='box'>
+                                <div className='image-container'>
+                                    <img src={ComicsImage5} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li className='image'>
+                        <div className="hover2">
+                            <div className='box'>
+                                <div className='desc-container'></div>
+                            </div>
+                            <div className='box'>
+                                <div className='image-container'>
+                                    <img src={ComicsImage6} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
                 <div className='btn-slide-container'>
                     <div className='btn-slide c-1'></div>

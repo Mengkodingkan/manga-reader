@@ -228,9 +228,63 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     min-width: 100%;
     height: 100%;
     transition: 1s;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
-.carousel-container > .carousel-image > .image:nth-child(1) {
+.carousel-container > .carousel-image > .image > .hover2 {
+    position: absolute;
+    background-color: rgba(51, 56, 66, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* filter: blur(7px); */
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-container > .carousel-image > .image > .hover2 > .box:nth-child(1) {
+    width: 50%;
+    height: 100%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container > .carousel-image > .image > .hover2 > .box:nth-child(1) > .desc-container {
+    width: 90%;
+    height: 70%;
+    border: 1px solid #fff;
+}
+
+.carousel-container > .carousel-image > .image > .hover2 > .box:nth-child(2) {
+    width: 50%;
+    height: 100%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.carousel-container > .carousel-image > .image > .hover2 > .box:nth-child(2) > .image-container {
+    width: 38%;
+    height: 70%;
+    /* border: 1px solid #fff; */
+    border-radius: 7px;
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-container > .carousel-image > .image > .hover2 > .box:nth-child(2) > .image-container > img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+/* .carousel-container > .carousel-image > .image:nth-child(1) {
     background-color: rgb(238, 130, 238);
 }
 
@@ -240,7 +294,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
 
 .carousel-container > .carousel-image > .image:nth-child(3) {
     background-color: rgb(250, 128, 114);
-}
+} */
 
 /* contents */
 .contents {
@@ -1022,7 +1076,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 19px;
 }
 
 ::-webkit-scrollbar-track {
@@ -1031,7 +1085,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
 
 ::-webkit-scrollbar-thumb {
     background-color: #d6dee1;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 6px solid transparent;
     background-clip: content-box;
 }
