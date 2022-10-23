@@ -7,21 +7,21 @@ import { Link } from 'react-router-dom';
 const slide1 = () => {
     document.getElementsByClassName('first')[0].style.marginLeft = '0';
     document.getElementsByClassName('c-1')[0].style.backgroundColor = '#ffd700';
-    document.getElementsByClassName('c-2')[0].style.backgroundColor = 'rgba(255, 215, 0, 0)';
-    document.getElementsByClassName('c-3')[0].style.backgroundColor = 'rgba(255, 215, 0, 0)';
+    document.getElementsByClassName('c-2')[0].style.backgroundColor = '#fff';
+    document.getElementsByClassName('c-3')[0].style.backgroundColor = '#fff';
 }
 
 const slide2 = () => {
     document.getElementsByClassName('first')[0].style.marginLeft = '-100%';
-    document.getElementsByClassName('c-1')[0].style.backgroundColor = 'rgba(255, 215, 0, 0)';
+    document.getElementsByClassName('c-1')[0].style.backgroundColor = '#fff';
     document.getElementsByClassName('c-2')[0].style.backgroundColor = '#ffd700';
-    document.getElementsByClassName('c-3')[0].style.backgroundColor = 'rgba(255, 215, 0, 0)';
+    document.getElementsByClassName('c-3')[0].style.backgroundColor = '#fff';
 }
 
 const slide3 = () => {
     document.getElementsByClassName('first')[0].style.marginLeft = '-200%';
-    document.getElementsByClassName('c-1')[0].style.backgroundColor = 'rgba(255, 215, 0, 0)';
-    document.getElementsByClassName('c-2')[0].style.backgroundColor = 'rgba(255, 215, 0, 0)';
+    document.getElementsByClassName('c-1')[0].style.backgroundColor = '#fff';
+    document.getElementsByClassName('c-2')[0].style.backgroundColor = '#fff';
     document.getElementsByClassName('c-3')[0].style.backgroundColor = '#ffd700';
 }
 
