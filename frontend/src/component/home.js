@@ -58,7 +58,32 @@ const Home = () => {
                     <li className='image first' carousel={carouselactive()}>
                         <div className="hover2">
                             <div className='box'>
-                                <div className='desc-container'></div>
+                                <div className='desc-container'>
+                                    <div className='d-1'>
+                                        <div className='stars'>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='title'>
+                                            <div className='e-1'>
+                                                <Link to="/" className="anchor">
+                                                    THE WORLD AFTER THE END
+                                                </Link>
+                                            </div>
+                                            <div className='e-2'>
+                                                <h4>MANHWA</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='d-2'>
+                                        <Link to="/" className='anchor'>Action</Link>
+                                        <Link to="/" className='anchor'>Adventure</Link>
+                                        <Link to="/" className='anchor'>Fanta</Link>
+                                    </div>
+                                    <div className='d-3'>
+                                        <h4>SUMMARY</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatum minus repellendus sunt commodi recusandae.</p>
+                                    </div>
+                                </div>
                             </div>
                             <div className='box'>
                                 <div className='image-container'>
@@ -70,7 +95,32 @@ const Home = () => {
                     <li className='image'>
                         <div className="hover2">
                             <div className='box'>
-                                <div className='desc-container'></div>
+                                <div className='desc-container'>
+                                    <div className='d-1'>
+                                        <div className='stars'>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='title'>
+                                            <div className='e-1'>
+                                                <Link to="/" className="anchor">
+                                                    THE WORLD AFTER THE END
+                                                </Link>
+                                            </div>
+                                            <div className='e-2'>
+                                                <h4>MANHWA</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='d-2'>
+                                        <Link to="/" className='anchor'>Action</Link>
+                                        <Link to="/" className='anchor'>Adventure</Link>
+                                        <Link to="/" className='anchor'>Fanta</Link>
+                                    </div>
+                                    <div className='d-3'>
+                                        <h4>SUMMARY</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatum minus repellendus sunt commodi recusandae.</p>
+                                    </div>
+                                </div>
                             </div>
                             <div className='box'>
                                 <div className='image-container'>
@@ -82,7 +132,32 @@ const Home = () => {
                     <li className='image'>
                         <div className="hover2">
                             <div className='box'>
-                                <div className='desc-container'></div>
+                                <div className='desc-container'>
+                                    <div className='d-1'>
+                                        <div className='stars'>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='title'>
+                                            <div className='e-1'>
+                                                <Link to="/" className="anchor">
+                                                    THE WORLD AFTER THE END
+                                                </Link>
+                                            </div>
+                                            <div className='e-2'>
+                                                <h4>MANHWA</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='d-2'>
+                                        <Link to="/" className='anchor'>Action</Link>
+                                        <Link to="/" className='anchor'>Adventure</Link>
+                                        <Link to="/" className='anchor'>Fanta</Link>
+                                    </div>
+                                    <div className='d-3'>
+                                        <h4>SUMMARY</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatum minus repellendus sunt commodi recusandae.</p>
+                                    </div>
+                                </div>
                             </div>
                             <div className='box'>
                                 <div className='image-container'>
