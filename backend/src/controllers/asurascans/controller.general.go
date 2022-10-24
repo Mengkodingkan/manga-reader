@@ -7,7 +7,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-const BASE_URL = "https://asurascans.com"
+const BASE_URL = "https://asura.gg"
 
 func Ping(c *gin.Context) {
 	res := http.Head(BASE_URL)
@@ -26,4 +26,17 @@ func Ping(c *gin.Context) {
 		Message:    "Website is up",
 		StatusCode: res.StatusCode,
 	})
+}
+
+func Home(c *gin.Context) {
+	res := http.Get(BASE_URL)
+
+	if res.StatusCode != 200 {
+		c.JSON(500, gin.H{
+			"status":  "error",
+			"message": "Something went wrong",
+		})
+	}
+
+	defer res.Body.Close()
 }
