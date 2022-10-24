@@ -28,10 +28,9 @@ const slide3 = () => {
     document.getElementsByClassName('c-3')[0].style.backgroundColor = '#ffd700';
 }
 
-const carouselactive = () => {
-    let count = 1;
-    setInterval(() => {
-        count++;
+let count = 1;
+const slideshow = setInterval(() => {
+    count++;
         if(count > 3) {
             count = 1;
         };
@@ -47,17 +46,14 @@ const carouselactive = () => {
                 slide3();
                 break;
         }
-
-    }, 7000);
-
-}
+}, 7000)
 
 const Home = () => {
     return (
         <>
             <Header />
             
-            <div className='carousel-container' carousel={carouselactive()}>
+            <div className='carousel-container' carousel={slideshow}>
                 <ul className='carousel-image'>
                     <li className='image first'>
                         <div className="hover2">
