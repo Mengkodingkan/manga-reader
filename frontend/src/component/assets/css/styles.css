@@ -21,14 +21,14 @@ nav > .navbar {
 
 nav > .navbar > .navbar-top {
     width: 100%;
-    height: 60%;
+    height: 65%;
     background-color: #282c34;
     /* border: 1px solid #fff; */
 }
 
 nav > .navbar > .navbar-bottom {
     width: 100%;
-    height: 40%;
+    height: 35%;
     background-color: #3139d4;
     /* border: 1px solid #fff; */
 }
@@ -135,7 +135,7 @@ nav > .navbar > .navbar-bottom > .navbar-container > .nav-anchor {
     display: flex;
     text-decoration: none;
     color: #fff;
-    font-size: 14px;
+    font-size: 13px;
     height: 100%;
     align-items: center;
 }
@@ -400,18 +400,6 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     height: 100%;
     background-size: cover;
 }
-
-/* .carousel-container > .carousel-image > .image:nth-child(1) {
-    background-color: rgb(238, 130, 238);
-}
-
-.carousel-container > .carousel-image > .image:nth-child(2) {
-    background-color: rgb(0, 255, 255);
-}
-
-.carousel-container > .carousel-image > .image:nth-child(3) {
-    background-color: rgb(250, 128, 114);
-} */
 
 /* contents */
 .contents {
@@ -917,10 +905,43 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     font-weight: 600;
 }
 
+/* footer  */
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: #2e333d;
+    /* border-top: .1px solid rgb(80, 80, 80); */
+}
+
+footer > .container-footer {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > .container-footer > h5 {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+footer > .container-footer > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
 @media screen and (min-width: 1401px) {
     nav > .navbar > .navbar-top > .navbar-container,
     nav > .navbar > .navbar-bottom > .navbar-container,
-    .contents {
+    .contents,
+    footer > .container-footer {
         width: 1200px;
     }
 
