@@ -8,7 +8,7 @@ import ComicsImage6 from './assets/img/4.jpg';
 import { Link } from 'react-router-dom'; 
 
 const slide1 = () => {
-    document.getElementsByClassName('first')[0].style.marginLeft = '0';
+    document.getElementsByClassName('first')[0].style.marginLeft = '0%';
     document.getElementsByClassName('c-1')[0].style.backgroundColor = '#ffd700';
     document.getElementsByClassName('c-2')[0].style.backgroundColor = '#fff';
     document.getElementsByClassName('c-3')[0].style.backgroundColor = '#fff';
@@ -28,34 +28,34 @@ const slide3 = () => {
     document.getElementsByClassName('c-3')[0].style.backgroundColor = '#ffd700';
 }
 
-const carouselactive = () => {
-    let count = 1;
-    setInterval(() => {
-        count++;
+let count = 1;
+const slideshow = setInterval(() => {
+    count++;
         if(count > 3) {
             count = 1;
         };
 
-        if(count === 1) {
-            slide1();
-        } else if(count === 2) {
-            slide2();
-        } else if(count === 3) {
-            slide3();
-        };
-
-    }, 7000);
-
-}
+        switch (count) {
+            case 1:
+                slide1();
+                break;
+            case 2:
+                slide2();
+                break;
+            default:
+                slide3();
+                break;
+        }
+}, 7000)
 
 const Home = () => {
     return (
         <>
             <Header />
             
-            <div className='carousel-container'>
+            <div className='carousel-container' carousel={slideshow}>
                 <ul className='carousel-image'>
-                    <li className='image first' carousel={carouselactive()}>
+                    <li className='image first'>
                         <div className="hover2">
                             <div className='box'>
                                 <div className='desc-container'>
