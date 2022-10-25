@@ -258,5 +258,145 @@ func Home(c *gin.Context) {
 		Status: "success",
 		Data:   HomeResponse,
 	})
+}
+
+func GetComic(c *gin.Context) {
+	// get endpoint
+	endpoint := c.Param("endpoint")
+	if endpoint == "" {
+		c.JSON(400, structures.Error{
+			Status:  "error",
+			Message: "endpoint is required",
+		})
+		return
+	}
+
+	res := http.Get(BASE_URL + "/" + endpoint)
+	if res.StatusCode != 200 {
+		c.JSON(400, structures.Error{
+			Status:  "error",
+			Message: "failed to get data",
+		})
+		return
+	}
+
+	doc, err := goquery.NewDocumentFromReader(res.Body)
+	if err != nil {
+		c.JSON(400, structures.Error{
+			Status:  "error",
+			Message: "failed to get data",
+		})
+		return
+	}
+
+	var MangaDetail asura_structure.MangaDetailResponse
+
+	MangaDetail.Title = strings.Replace(doc.Find("title").Text(), " - Asura Scans", "", -1)
+	MangaDetail.Thumb = doc.Find(".thumbook").Find(".wp-post-image").AttrOr("src", "No Thumbnail")
+	MangaDetail.Synopsis = doc.Find("div[itemprop='description']").Find("p").Text()
+	MangaDetail.Scores = doc.Find(".thumbook").Find("div[itemprop='ratingValue']").Text()
+	MangaDetail.Status = doc.Find(".tsinfo").Find("i").Text()
+
+	type_title := doc.Find(".tsinfo").Find("a").Text()
+	type_url := doc.Find(".tsinfo").Find("a").AttrOr("href", "No URL")
+	type_endpoint := strings.Replace(type_url, BASE_URL, "", -1)
+	MangaDetail.Type = struct {
+		Title    string `json:"title"`
+		Url      string `json:"url"`
+		Endpoint string `json:"endpoint"`
+	}{
+		Title:    type_title,
+		Url:      type_url,
+		Endpoint: type_endpoint,
+	}
+
+	MangaDetail.Released = doc.Find(".flex-wrap").Eq(0).Find(".fmed").Eq(0).Find("span").Text()
+	MangaDetail.Released = strings.TrimFunc(MangaDetail.Released, func(r rune) bool {
+		return r == '\n' || r == '\t'
+	})
+	MangaDetail.Author = doc.Find(".flex-wrap").Eq(0).Find(".fmed").Eq(1).Find("span").Text()
+	MangaDetail.Author = strings.TrimFunc(MangaDetail.Author, func(r rune) bool {
+		return r == '\n' || r == '\t'
+	})
+
+	MangaDetail.Artist = doc.Find(".flex-wrap").Eq(1).Find(".fmed").Eq(0).Find("span").Text()
+	MangaDetail.Artist = strings.TrimFunc(MangaDetail.Artist, func(r rune) bool {
+		return r == '\n' || r == '\t'
+	})
+
+	MangaDetail.Serialization = doc.Find(".flex-wrap").Eq(2).Find(".fmed").Eq(0).Find("span").Text()
+	MangaDetail.Serialization = strings.TrimFunc(MangaDetail.Serialization, func(r rune) bool {
+		return r == '\n' || r == '\t'
+	})
+
+	MangaDetail.PostedBy = doc.Find(".flex-wrap").Eq(2).Find(".fmed").Eq(1).Find("span").Text()
+	MangaDetail.PostedBy = strings.TrimFunc(MangaDetail.PostedBy, func(r rune) bool {
+		return r == '\n' || r == '\t'
+	})
+
+	MangaDetail.PostedOn = doc.Find(".flex-wrap").Eq(3).Find(".fmed").Eq(0).Find("span").Text()
+	MangaDetail.PostedOn = strings.TrimFunc(MangaDetail.PostedOn, func(r rune) bool {
+		return r == '\n' || r == '\t'
+	})
+
+	MangaDetail.UpdatedOn = doc.Find(".flex-wrap").Eq(3).Find(".fmed").Eq(1).Find("span").Text()
+	MangaDetail.UpdatedOn = strings.TrimFunc(MangaDetail.UpdatedOn, func(r rune) bool {
+		return r == '\n' || r == '\t'
+	})
+
+	var genres []interface{}
+	doc.Find(".wd-full").Find(".mgen").Children().Each(func(i int, s *goquery.Selection) {
+		name := s.Text()
+		url := s.AttrOr("href", "No URL")
+		endpoint := strings.Replace(url, BASE_URL, "", -1)
+
+		genres = append(genres, struct {
+			Name     string `json:"name"`
+			Url      string `json:"url"`
+			Endpoint string `json:"endpoint"`
+		}{
+			Name:     name,
+			Url:      url,
+			Endpoint: endpoint,
+		})
+
+	})
+	MangaDetail.Genres = genres
+
+	// var keywords []string
+	doc.Find(".bottom").Find("strong").Remove()
+	var txt = doc.Find(".bottom").Text()
+	txt = strings.TrimFunc(txt, func(r rune) bool {
+		return r == '\n' || r == '\t'
+	})
+	MangaDetail.Keywords = strings.Split(txt, ", ")
+
+	var chapters []interface{}
+	doc.Find("#chapterlist").Find("ul").Children().Each(func(i int, s *goquery.Selection) {
+		title := "Chapter " + s.AttrOr("data-num", "Missing Chapter")
+		posted_at := s.Find("span").Eq(1).Text()
+		url := s.Find("a").AttrOr("href", "No URL")
+		endpoint := strings.Replace(url, BASE_URL, "", -1)
+
+		chapters = append(chapters, struct {
+			Name     string `json:"name"`
+			PostedAt string `json:"posted_at"`
+			Url      string `json:"url"`
+			Endpoint string `json:"endpoint"`
+		}{
+			Name:     title,
+			PostedAt: posted_at,
+			Url:      url,
+			Endpoint: endpoint,
+		})
+	})
+	MangaDetail.Chapters = chapters
+
+	defer res.Body.Close()
+
+	c.JSON(200, structures.Success{
+		Status: "success",
+		Data:   MangaDetail,
+	})
 
 }

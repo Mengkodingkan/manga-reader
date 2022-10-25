@@ -50,3 +50,23 @@ type PopularContent struct {
 	Genres   []interface{} `json:"genres"`
 	Scores   string        `json:"scores"`
 }
+
+// MangaDetailResponse is a struct for manga detail response
+type MangaDetailResponse struct {
+	Title         string        `json:"title"`
+	Thumb         string        `json:"thumb"`
+	Synopsis      string        `json:"synopsis"`
+	Scores        string        `json:"scores"`
+	Status        string        `json:"status"`
+	Type          interface{}   `json:"type"`
+	Released      string        `json:"released"`
+	Author        string        `json:"author"`
+	Artist        string        `json:"artist"`
+	Serialization string        `json:"serialization"`
+	PostedBy      string        `json:"posted_by"`
+	PostedOn      string        `json:"posted_on"`
+	UpdatedOn     string        `json:"updated_on"`
+	Genres        []interface{} `json:"genres"`
+	Keywords      []string      `json:"keywords"`
+	Chapters      []interface{} `json:"chapters"`
+}
