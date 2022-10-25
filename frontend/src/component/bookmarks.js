@@ -16,7 +16,13 @@ const Bookmarks = () => {
                         <div className='desc'>
                             <p>You can save a list of manga titles here up to 200. The list approves based on the latest update date. The list of manga is stored in a browser that you can use right now.</p>
                         </div>
-                        <div className='item'></div>
+                        <div className='items'>
+                            <div className='item'></div>
+                            <div className='item'></div>
+                            <div className='item'></div>
+                            <div className='item'></div>
+                            <div className='item'></div>
+                        </div>
                     </div>
                 </div>
 
