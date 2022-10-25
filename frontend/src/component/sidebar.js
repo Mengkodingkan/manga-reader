@@ -10,15 +10,9 @@ const sidebar = () => {
             <div className='box'>
                 <div className='a-4'>
                     <ul className='a-6'>
-                        <li className='a-7 active'>
-                            <Link to="/" className='a-8'>Weekly</Link>
-                        </li>
-                        <li className='a-7'>
-                            <Link to="/" className='a-8'>Monthly</Link>
-                        </li>
-                        <li className='a-7'>
-                            <Link to="/" className='a-8'>All</Link>
-                        </li>
+                        <Link to="/" className='a-7 active'>Weekly</Link>
+                        <Link to="/" className='a-7'>Monthly</Link>
+                        <Link to="/" className='a-7'>All</Link> 
                     </ul>
                 </div>
                 <div className='a-5'>
