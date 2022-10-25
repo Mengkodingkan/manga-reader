@@ -39,7 +39,7 @@ type LatestUpdateContent struct {
 
 type PopularList struct {
 	Weekly  []PopularContent `json:"weekly"`
-	Monthly []PopularContent `json:"month"`
+	Monthly []PopularContent `json:"monthly"`
 	All     []PopularContent `json:"all"`
 }
 type PopularContent struct {
