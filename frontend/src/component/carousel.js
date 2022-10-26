@@ -44,7 +44,7 @@ const slideshow = setInterval(() => {
         }
 }, 7000)
 
-const carousel = () => {
+const Carousel = () => {
     return (
         <div className='carousel-container' slideshow={slideshow}>
             <ul className='carousel-image'>
@@ -172,4 +172,4 @@ const carousel = () => {
     )
 }
 
-export default carousel;
+export default Carousel;

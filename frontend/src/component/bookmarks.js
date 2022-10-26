@@ -1,5 +1,5 @@
-import Header from './header';
-import Sidebar from './sidebar';
+import Header from './Header';
+import Sidebar from './Sidebar';
 import bookmarkImage from './assets/img/7.webp';
 
 const Bookmarks = () => {

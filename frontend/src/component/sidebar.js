@@ -1,305 +1,40 @@
-import ComicsImage3 from './assets/img/2.png';
-import { Link } from 'react-router-dom'; 
+import {Link} from 'react-router-dom';
 
-const sidebar = () => {
+const anchoractive1 = () => {
+    document.getElementsByClassName('sidebar-anchor')[0].classList.add('active');
+    document.getElementsByClassName('sidebar-anchor')[1].classList.remove('active');
+    document.getElementsByClassName('sidebar-anchor')[2].classList.remove('active');
+    
+}
+
+const anchoractive2 = () => {
+    document.getElementsByClassName('sidebar-anchor')[0].classList.remove('active');
+    document.getElementsByClassName('sidebar-anchor')[1].classList.add('active');
+    document.getElementsByClassName('sidebar-anchor')[2].classList.remove('active');
+}
+
+const anchoractive3 = () => {
+    document.getElementsByClassName('sidebar-anchor')[0].classList.remove('active');
+    document.getElementsByClassName('sidebar-anchor')[1].classList.remove('active');
+    document.getElementsByClassName('sidebar-anchor')[2].classList.add('active');
+}
+
+const Sidebar = () => {
     return (
-        <div className='sidebar'>
-            <div className='desc'>
+        
+        <div className='header-sidebar'>
+            <div className="title">
                 <h5>Popular</h5>
             </div>
-            <div className='box'>
-                <div className='a-4'>
-                    <ul className='a-6'>
-                        <Link to="/" className='a-7 active'>Weekly</Link>
-                        <Link to="/" className='a-7'>Monthly</Link>
-                        <Link to="/" className='a-7'>All</Link> 
-                    </ul>
-                </div>
-                <div className='a-5'>
-                    <div className="item">
-                        <div className='number'>
-                            <h5>1</h5>
-                        </div>
-                        <div className='image-container'>
-                            <img src={ComicsImage3} alt="" />
-                        </div>
-                        <div className='desc-container'>
-                            <div className='title'>
-                                <Link to="/" className='b-1'>Existence</Link>
-                            </div>
-                            <div className='genres'>
-                                <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
-                            </div>
-                            <div className='rating'>
-                                <div className='stars'>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                </div>
-                                <div className='value'>
-                                    <h5>10</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <div className='number'>
-                            <h5>2</h5>
-                        </div>
-                        <div className='image-container'>
-                            <img src={ComicsImage3} alt="" />
-                        </div>
-                        <div className='desc-container'>
-                            <div className='title'>
-                                <Link to="/" className='b-1'>Existence</Link>
-                            </div>
-                            <div className='genres'>
-                                <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
-                            </div>
-                            <div className='rating'>
-                                <div className='stars'>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                </div>
-                                <div className='value'>
-                                    <h5>10</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <div className='number'>
-                            <h5>3</h5>
-                        </div>
-                        <div className='image-container'>
-                            <img src={ComicsImage3} alt="" />
-                        </div>
-                        <div className='desc-container'>
-                            <div className='title'>
-                                <Link to="/" className='b-1'>Existence</Link>
-                            </div>
-                            <div className='genres'>
-                                <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
-                            </div>
-                            <div className='rating'>
-                                <div className='stars'>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                </div>
-                                <div className='value'>
-                                    <h5>10</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <div className='number'>
-                            <h5>4</h5>
-                        </div>
-                        <div className='image-container'>
-                            <img src={ComicsImage3} alt="" />
-                        </div>
-                        <div className='desc-container'>
-                            <div className='title'>
-                                <Link to="/" className='b-1'>Existence</Link>
-                            </div>
-                            <div className='genres'>
-                                <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
-                            </div>
-                            <div className='rating'>
-                                <div className='stars'>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                </div>
-                                <div className='value'>
-                                    <h5>10</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <div className='number'>
-                            <h5>5</h5>
-                        </div>
-                        <div className='image-container'>
-                            <img src={ComicsImage3} alt="" />
-                        </div>
-                        <div className='desc-container'>
-                            <div className='title'>
-                                <Link to="/" className='b-1'>Existence</Link>
-                            </div>
-                            <div className='genres'>
-                                <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
-                            </div>
-                            <div className='rating'>
-                                <div className='stars'>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                </div>
-                                <div className='value'>
-                                    <h5>10</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <div className='number'>
-                            <h5>6</h5>
-                        </div>
-                        <div className='image-container'>
-                            <img src={ComicsImage3} alt="" />
-                        </div>
-                        <div className='desc-container'>
-                            <div className='title'>
-                                <Link to="/" className='b-1'>Existence</Link>
-                            </div>
-                            <div className='genres'>
-                                <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
-                            </div>
-                            <div className='rating'>
-                                <div className='stars'>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                </div>
-                                <div className='value'>
-                                    <h5>10</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <div className='number'>
-                            <h5>7</h5>
-                        </div>
-                        <div className='image-container'>
-                            <img src={ComicsImage3} alt="" />
-                        </div>
-                        <div className='desc-container'>
-                            <div className='title'>
-                                <Link to="/" className='b-1'>Existence</Link>
-                            </div>
-                            <div className='genres'>
-                                <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
-                            </div>
-                            <div className='rating'>
-                                <div className='stars'>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                </div>
-                                <div className='value'>
-                                    <h5>10</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <div className='number'>
-                            <h5>8</h5>
-                        </div>
-                        <div className='image-container'>
-                            <img src={ComicsImage3} alt="" />
-                        </div>
-                        <div className='desc-container'>
-                            <div className='title'>
-                                <Link to="/" className='b-1'>Existence</Link>
-                            </div>
-                            <div className='genres'>
-                                <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
-                            </div>
-                            <div className='rating'>
-                                <div className='stars'>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                </div>
-                                <div className='value'>
-                                    <h5>10</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <div className='number'>
-                            <h5>9</h5>
-                        </div>
-                        <div className='image-container'>
-                            <img src={ComicsImage3} alt="" />
-                        </div>
-                        <div className='desc-container'>
-                            <div className='title'>
-                                <Link to="/" className='b-1'>Existence</Link>
-                            </div>
-                            <div className='genres'>
-                                <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
-                            </div>
-                            <div className='rating'>
-                                <div className='stars'>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                </div>
-                                <div className='value'>
-                                    <h5>10</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <div className='number'>
-                            <h5>10</h5>
-                        </div>
-                        <div className='image-container'>
-                            <img src={ComicsImage3} alt="" />
-                        </div>
-                        <div className='desc-container'>
-                            <div className='title'>
-                                <Link to="/" className='b-1'>Existence</Link>
-                            </div>
-                            <div className='genres'>
-                                <h5>Genres: <Link to="/" className='b-2'>Action, </Link> <Link to="/" className='b-3'>Adventure, </Link> <Link to="/" className='b-4'>Comedy, </Link> <Link to="/" className='b-5'>Fantasy</Link></h5> 
-                            </div>
-                            <div className='rating'>
-                                <div className='stars'>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                    <i className="fa-sharp fa-solid fa-star"></i>
-                                </div>
-                                <div className='value'>
-                                    <h5>10</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div className="navbar">
+                <div className="container">
+                    <Link to="/" className='sidebar-anchor active' onClick={anchoractive1}>Weekly</Link>
+                    <Link to="/" className='sidebar-anchor' onClick={anchoractive2}>Monthly</Link>
+                    <Link to="/" className='sidebar-anchor' onClick={anchoractive3}>All</Link>
                 </div>
             </div>
         </div>
     )
 }
 
-export default sidebar;
+export default Sidebar;
