@@ -2,7 +2,7 @@ import Header from './header';
 import Sidebar from './sidebar';
 import Carousel from './carousel';
 import ComicsImage from './assets/img/carousel-1.jpg';
-import ComicsImage2 from './assets/img/1.webp';
+import ComicsImage2 from './assets/img/7.webp';
 import { Link } from 'react-router-dom'; 
 
 const Home = () => {
@@ -137,7 +137,7 @@ const Home = () => {
                         </div>
                         <div className="box">
                             <div className='item'>
-                                <div className='items'>
+                                <div className='list'>
                                     <div className="image-container">
                                         <img src={ComicsImage} alt="" />
                                     </div>
@@ -159,53 +159,7 @@ const Home = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='items'>
-                                    <div className="image-container">
-                                        <img src={ComicsImage} alt="" />
-                                    </div>
-                                    <div className="desc-container">
-                                        <div className='title'>
-                                            <Link to="/" className='a-2'>Never Die Extra</Link>
-                                        </div>
-                                        <div className="a-1">
-                                            <Link to="/" className='a-3'>Chapter 66</Link>
-                                            <h5>10 hours ago</h5>
-                                        </div>
-                                        <div className="a-1">
-                                            <Link to="/" className='a-3'>Chapter 66</Link>
-                                            <h5>10 hours ago</h5>
-                                        </div>
-                                        <div className="a-1">
-                                            <Link to="/" className='a-3'>Chapter 66</Link>
-                                            <h5>10 hours ago</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='items'>
-                                    <div className="image-container">
-                                        <img src={ComicsImage} alt="" />
-                                    </div>
-                                    <div className="desc-container">
-                                        <div className='title'>
-                                            <Link to="/" className='a-2'>Never Die Extra</Link>
-                                        </div>
-                                        <div className="a-1">
-                                            <Link to="/" className='a-3'>Chapter 66</Link>
-                                            <h5>10 hours ago</h5>
-                                        </div>
-                                        <div className="a-1">
-                                            <Link to="/" className='a-3'>Chapter 66</Link>
-                                            <h5>10 hours ago</h5>
-                                        </div>
-                                        <div className="a-1">
-                                            <Link to="/" className='a-3'>Chapter 66</Link>
-                                            <h5>10 hours ago</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='items'>
+                                <div className='list'>
                                     <div className="image-container">
                                         <img src={ComicsImage} alt="" />
                                     </div>
@@ -229,7 +183,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className='item'>
-                                <div className='items'>
+                                <div className='list'>
                                     <div className="image-container">
                                         <img src={ComicsImage} alt="" />
                                     </div>
@@ -251,53 +205,7 @@ const Home = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='items'>
-                                    <div className="image-container">
-                                        <img src={ComicsImage} alt="" />
-                                    </div>
-                                    <div className="desc-container">
-                                        <div className='title'>
-                                            <Link to="/" className='a-2'>Never Die Extra</Link>
-                                        </div>
-                                        <div className="a-1">
-                                            <Link to="/" className='a-3'>Chapter 66</Link>
-                                            <h5>10 hours ago</h5>
-                                        </div>
-                                        <div className="a-1">
-                                            <Link to="/" className='a-3'>Chapter 66</Link>
-                                            <h5>10 hours ago</h5>
-                                        </div>
-                                        <div className="a-1">
-                                            <Link to="/" className='a-3'>Chapter 66</Link>
-                                            <h5>10 hours ago</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='items'>
-                                    <div className="image-container">
-                                        <img src={ComicsImage} alt="" />
-                                    </div>
-                                    <div className="desc-container">
-                                        <div className='title'>
-                                            <Link to="/" className='a-2'>Never Die Extra</Link>
-                                        </div>
-                                        <div className="a-1">
-                                            <Link to="/" className='a-3'>Chapter 66</Link>
-                                            <h5>10 hours ago</h5>
-                                        </div>
-                                        <div className="a-1">
-                                            <Link to="/" className='a-3'>Chapter 66</Link>
-                                            <h5>10 hours ago</h5>
-                                        </div>
-                                        <div className="a-1">
-                                            <Link to="/" className='a-3'>Chapter 66</Link>
-                                            <h5>10 hours ago</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='items'>
+                                <div className='list'>
                                     <div className="image-container">
                                         <img src={ComicsImage} alt="" />
                                     </div>
@@ -321,7 +229,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className='item'>
-                                <div className='items'>
+                                <div className='list'>
                                     <div className="image-container">
                                         <img src={ComicsImage} alt="" />
                                     </div>
@@ -343,7 +251,99 @@ const Home = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='items'>
+                                <div className='list'>
+                                    <div className="image-container">
+                                        <img src={ComicsImage} alt="" />
+                                    </div>
+                                    <div className="desc-container">
+                                        <div className='title'>
+                                            <Link to="/" className='a-2'>Never Die Extra</Link>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='list'>
+                                    <div className="image-container">
+                                        <img src={ComicsImage} alt="" />
+                                    </div>
+                                    <div className="desc-container">
+                                        <div className='title'>
+                                            <Link to="/" className='a-2'>Never Die Extra</Link>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='list'>
+                                    <div className="image-container">
+                                        <img src={ComicsImage} alt="" />
+                                    </div>
+                                    <div className="desc-container">
+                                        <div className='title'>
+                                            <Link to="/" className='a-2'>Never Die Extra</Link>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='list'>
+                                    <div className="image-container">
+                                        <img src={ComicsImage} alt="" />
+                                    </div>
+                                    <div className="desc-container">
+                                        <div className='title'>
+                                            <Link to="/" className='a-2'>Never Die Extra</Link>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                        <div className="a-1">
+                                            <Link to="/" className='a-3'>Chapter 66</Link>
+                                            <h5>10 hours ago</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='list'>
                                     <div className="image-container">
                                         <img src={ComicsImage} alt="" />
                                     </div>
