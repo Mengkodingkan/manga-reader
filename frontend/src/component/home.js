@@ -1,19 +1,19 @@
-import Header from './Header';
-import Sidebar from './Sidebar';
-import Carousel from './Carousel';
+import Header from './header';
+import Sidebar from './sidebar';
+import Carousel from './carousel';
 import ComicsImage from './assets/img/carousel-1.jpg';
 import ComicsImage2 from './assets/img/7.webp';
 // import Monthly from './Monthly';
 // import Weekly from './Weekly';
 // import All from './All';
 // import Home from './Home'
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
         <>
             <Header />
-            
+
             <Carousel />
 
             <div className='contents'>
@@ -375,7 +375,7 @@ const Home = () => {
                 </div>
 
                 <Sidebar />
-                    
+
             </div>
         </>
     )

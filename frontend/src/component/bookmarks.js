@@ -1,5 +1,5 @@
-import Header from './Header';
-import Sidebar from './Sidebar';
+import Header from './header';
+import Sidebar from './sidebar';
 import bookmarkImage from './assets/img/7.webp';
 
 const Bookmarks = () => {
@@ -25,19 +25,19 @@ const Bookmarks = () => {
                                 </div>
                                 <div className='desc-container'>
                                     <h4>I'll Be Taking A Break For Personal Reasons</h4>
-                                <h5>Chapter 20</h5>
-                                <div className='rating'>
-                                    <div className='stars'>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                    <h5>Chapter 20</h5>
+                                    <div className='rating'>
+                                        <div className='stars'>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='evaluation'>
+                                            <h5>10</h5>
+                                        </div>
                                     </div>
-                                    <div className='evaluation'>
-                                        <h5>10</h5>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                             <div className='item'>
@@ -47,19 +47,19 @@ const Bookmarks = () => {
                                 </div>
                                 <div className='desc-container'>
                                     <h4>I'll Be Taking A Break For Personal Reasons</h4>
-                                <h5>Chapter 20</h5>
-                                <div className='rating'>
-                                    <div className='stars'>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                    <h5>Chapter 20</h5>
+                                    <div className='rating'>
+                                        <div className='stars'>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='evaluation'>
+                                            <h5>10</h5>
+                                        </div>
                                     </div>
-                                    <div className='evaluation'>
-                                        <h5>10</h5>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                             <div className='item'>
@@ -69,19 +69,19 @@ const Bookmarks = () => {
                                 </div>
                                 <div className='desc-container'>
                                     <h4>I'll Be Taking A Break For Personal Reasons</h4>
-                                <h5>Chapter 20</h5>
-                                <div className='rating'>
-                                    <div className='stars'>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                    <h5>Chapter 20</h5>
+                                    <div className='rating'>
+                                        <div className='stars'>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='evaluation'>
+                                            <h5>10</h5>
+                                        </div>
                                     </div>
-                                    <div className='evaluation'>
-                                        <h5>10</h5>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                             <div className='item'>
@@ -91,19 +91,19 @@ const Bookmarks = () => {
                                 </div>
                                 <div className='desc-container'>
                                     <h4>I'll Be Taking A Break For Personal Reasons</h4>
-                                <h5>Chapter 20</h5>
-                                <div className='rating'>
-                                    <div className='stars'>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                    <h5>Chapter 20</h5>
+                                    <div className='rating'>
+                                        <div className='stars'>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='evaluation'>
+                                            <h5>10</h5>
+                                        </div>
                                     </div>
-                                    <div className='evaluation'>
-                                        <h5>10</h5>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                             <div className='item'>
@@ -113,19 +113,19 @@ const Bookmarks = () => {
                                 </div>
                                 <div className='desc-container'>
                                     <h4>I'll Be Taking A Break For Personal Reasons</h4>
-                                <h5>Chapter 20</h5>
-                                <div className='rating'>
-                                    <div className='stars'>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
-                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                    <h5>Chapter 20</h5>
+                                    <div className='rating'>
+                                        <div className='stars'>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                            <i className="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <div className='evaluation'>
+                                            <h5>10</h5>
+                                        </div>
                                     </div>
-                                    <div className='evaluation'>
-                                        <h5>10</h5>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                         </div>
