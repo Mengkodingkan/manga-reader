@@ -412,6 +412,16 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     gap: 10px;
 }
 
+.contents-comics {
+    width: 90%;
+    margin: 130px auto 10px;
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contents-comics > .main-contents,
 .contents > .main-contents {
     width: 70%;
     /* border: 1px solid #fff; */
@@ -421,6 +431,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     gap: 10px;
 }
 
+.contents-comics > .main-contents > .manga-list,
 .contents > .main-contents > .popular {
     width: 100%;
     min-height: 200px;
@@ -432,6 +443,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     flex-direction: column;
 }
 
+.contents-comics > .main-contents > .manga-list > .title,
 .contents > .main-contents > .popular > .title {
     width: 100%;
     height: 50px;
@@ -442,12 +454,14 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     padding: 10px;
 }
 
+.contents-comics > .main-contents > .manga-list > .title > h5,
 .contents > .main-contents > .popular > .title > h5 {
     font-size: 14px;
     color: #fff;
     font-weight: 600;
 }
 
+.contents-comics > .main-contents > .manga-list > .box,
 .contents > .main-contents > .popular > .box {
     width: 100%;
     padding: 10px;
@@ -458,6 +472,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     gap: 10px;
 }
 
+.contents-comics > .main-contents > .manga-list > .box > .item,
 .contents > .main-contents > .popular > .box > .item {
     /* border: 1px solid #fff; */
     display: flex;
@@ -468,16 +483,19 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     cursor: pointer;
 }
 
+.contents-comics > .main-contents > .manga-list > .box > .item:hover > .image-container > .hover,
 .contents > .main-contents > .popular > .box > .item:hover > .image-container > .hover,
 .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item:hover > .image-container > .hover {
     background-color: rgba(38, 42, 50, .4);
 }
 
+.contents-comics > .main-contents > .manga-list > .box > .item:hover > .desc-container > h4,
 .contents > .main-contents > .popular > .box > .item:hover > .desc-container > h4,
 .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item:hover > .desc-container > h4 {
     color: #3139d4;
 }
 
+.contents-comics > .main-contents > .manga-list > .box > .item > .desc-container > h4,
 .contents > .main-contents > .popular > .box > .item > .desc-container > h4,
 .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .desc-container > h4 {
     font-weight: 600;
@@ -485,6 +503,8 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     font-size: 13px;
 }
 
+.contents-comics > .main-contents > .manga-list > .box > .item > .desc-container > h5,
+.contents-comics > .main-contents > .manga-list > .box > .item > .desc-container > .rating > .evaluation > h5,
 .contents > .main-contents > .popular > .box > .item > .desc-container > h5,
 .contents > .main-contents > .popular > .box > .item > .desc-container > .rating > .evaluation > h5,
 .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .desc-container > h5,
@@ -494,6 +514,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     font-size: 13px;
 }
 
+.contents-comics > .main-contents > .manga-list > .box > .item > .desc-container > .rating,
 .contents > .main-contents > .popular > .box > .item > .desc-container > .rating,
 .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .desc-container > .rating {
     height: 20px;
@@ -503,6 +524,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     gap: 2px;
 }
 
+.contents-comics > .main-contents > .manga-list > .box > .item > .desc-container > .rating > .stars,
 .contents > .main-contents > .popular > .box > .item > .desc-container > .rating > .stars,
 .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .desc-container > .rating > .stars {
     display: flex;
@@ -511,12 +533,14 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     align-items: center;
 }
 
+.contents-comics > .main-contents > .manga-list > .box > .item > .desc-container > .rating > .stars > .fa-star,
 .contents > .main-contents > .popular > .box > .item > .desc-container > .rating > .stars > .fa-star,
 .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .desc-container > .rating > .stars > .fa-star {
     color: #ffd700;
     font-size: 13px;
 }
 
+.contents-comics > .main-contents > .manga-list > .box > .item > .desc-container > .rating > .evaluation, 
 .contents > .main-contents > .popular > .box > .item > .desc-container > .rating > .evaluation,
 .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .desc-container > .rating > .evaluation {
     display: flex;
@@ -771,6 +795,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     /* border: 1px solid #fff; */
 }
 
+.contents-comics > .main-contents > .manga-list > .box > .item > .image-container,
 .contents > .main-contents > .popular > .box > .item > .image-container,
 .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .image-container {
     width: 100%;
@@ -780,6 +805,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     position: relative;
 }
 
+.contents-comics > .main-contents > .manga-list > .box > .item > .image-container > .hover,
 .contents > .main-contents > .popular > .box > .item > .image-container > .hover,
 .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .image-container > .hover {
     width: 100%;
@@ -788,6 +814,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     background-color: rgba(38, 42, 50, 0);
 }
 
+.contents-comics > .main-contents > .manga-list > .box > .item > .image-container > img,
 .contents > .main-contents > .popular > .box > .item > .image-container > img,
 .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .image-container > img {
     width: 100%;
@@ -795,7 +822,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     background-size: cover;
 }
 
-
+.contents-comics > .main-contents > .manga-list > .box > .item > .desc-container,
 .contents > .main-contents > .popular > .box > .item > .desc-container,
 .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .desc-container {
     width: 100%;
@@ -810,6 +837,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
 
 /* sidebar */
 
+.contents-comics > .sidebar,
 .contents > .sidebar,
 .contents-bookmarks > .sidebar {
     width: 30%;
@@ -817,6 +845,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     flex-direction: column;
 }
 
+.contents-comics > .sidebar > .header-sidebar,
 .contents > .sidebar > .header-sidebar,
 .contents-bookmarks > .sidebar > .header-sidebar {
     width: 100%;
@@ -829,6 +858,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     overflow: hidden;
 }
 
+.contents-comics > .sidebar > .header-sidebar > .title,
 .contents > .sidebar > .header-sidebar > .title,
 .contents-bookmarks > .sidebar > .header-sidebar > .title{
     width: 100%;
@@ -836,12 +866,14 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     /* border: 1px solid #fff; */
 }
 
+.contents-comics > .sidebar > .header-sidebar > .navbar,
 .contents > .sidebar > .header-sidebar > .navbar,
 .contents-bookmarks > .sidebar > .header-sidebar > .navbar {
     width: 100%;
     height: 55%;
 }
 
+.contents-comics > .sidebar > .header-sidebar > .title,
 .contents > .sidebar > .header-sidebar > .title,
 .contents-bookmarks > .sidebar > .header-sidebar > .title {
     display: flex;
@@ -851,6 +883,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     padding: 10px;
 }
 
+.contents-comics > .sidebar > .header-sidebar > .title > h5,
 .contents > .sidebar > .header-sidebar > .title > h5,
 .contents-bookmarks > .sidebar > .header-sidebar > .title > h5 {
     font-size: 14px;
@@ -858,12 +891,14 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     color: #fff;
 }
 
+.contents-comics > .sidebar > .header-sidebar > .navbar,
 .contents > .sidebar > .header-sidebar > .navbar,
 .contents-bookmarks > .sidebar > .header-sidebar > .navbar {
     padding: 10px;
     display: flex;
 }
 
+.contents-comics > .sidebar > .header-sidebar > .navbar > .container,
 .contents > .sidebar > .header-sidebar > .navbar > .container,
 .contents-bookmarks > .sidebar > .header-sidebar > .navbar > .container {
     width: 100%;
@@ -877,6 +912,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     padding: 5px;
 }
 
+.contents-comics > .sidebar > .header-sidebar > .navbar > .container > .sidebar-anchor,
 .contents > .sidebar > .header-sidebar > .navbar > .container > .sidebar-anchor,
 .contents-bookmarks > .sidebar > .header-sidebar > .navbar > .container > .sidebar-anchor {
     color: #fff;
@@ -893,17 +929,20 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     cursor: pointer;
 }
 
+.contents-comics > .sidebar > .header-sidebar > .navbar > .container > .sidebar-anchor:hover,
 .contents > .sidebar > .header-sidebar > .navbar > .container > .sidebar-anchor:hover,
 .contents-bookmarks > .sidebar > .header-sidebar > .navbar > .container > .sidebar-anchor:hover {
     color: #3139d4;
 }
 
+.contents-comics > .sidebar > .header-sidebar > .navbar > .container > .sidebar-anchor.active,
 .contents > .sidebar > .header-sidebar > .navbar > .container > .sidebar-anchor.active,
 .contents-bookmarks > .sidebar > .header-sidebar > .navbar > .container > .sidebar-anchor.active {
     background-color: #3139d4;
     color: #fff;
 }
 
+.contents-comics > .sidebar > .contents-sidebar,
 .contents > .sidebar > .contents-sidebar,
 .contents-bookmarks > .sidebar > .contents-sidebar {
     width: 100%;
@@ -916,6 +955,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     border-radius: 0 0 3px 3px;
 }   
 
+.contents-comics > .sidebar > .contents-sidebar > .box,
 .contents > .sidebar > .contents-sidebar > .box,
 .contents-bookmarks > .sidebar > .contents-sidebar > .box {
     min-width: 100%;
@@ -925,6 +965,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     gap: 10px;
 }
 
+.contents-comics > .sidebar > .contents-sidebar > .box > .item,
 .contents > .sidebar > .contents-sidebar > .box > .item,
 .contents-bookmarks > .sidebar > .contents-sidebar > .box > .item {
     width: 100%;
@@ -934,11 +975,13 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     padding: 10px;
 }
 
+.contents-comics > .sidebar > .contents-sidebar > .box > .item:not(:last-child),
 .contents > .sidebar > .contents-sidebar > .box > .item:not(:last-child),
 .contents-bookmarks > .sidebar > .contents-sidebar > .box > .item:not(:last-child) {
     border-bottom: .1px solid rgb(81, 81, 81);
 }
 
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-1,
 .contents > .sidebar > .contents-sidebar > .box > .item > .a-1,
 .contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-1 {
     width: 15%;
@@ -950,6 +993,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     padding: 5px;
 }
 
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-2,
 .contents > .sidebar > .contents-sidebar > .box > .item > .a-2,
 .contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-2 {
     width: 35%;
@@ -961,13 +1005,15 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     overflow: hidden;
 }
 
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-2 > img,
 .contents > .sidebar > .contents-sidebar > .box > .item > .a-2 > img,
 .contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-2 > img {
     width: 100%;
     height: 100%;
-    background-size: cover;
+    object-fit: cover;
 }
 
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-3,
 .contents > .sidebar > .contents-sidebar > .box > .item > .a-3,
 .contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 {
     width: 50%;
@@ -978,7 +1024,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     gap: 5px;
 }
 
-
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-1 > h5,
 .contents > .sidebar > .contents-sidebar > .box > .item > .a-1 > h5,
 .contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-1 > h5 {
     color: rgb(189, 189, 189);
@@ -993,6 +1039,9 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     border-radius: 3px;
 }
 
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-1,
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-2,
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3,
 .contents > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-1,
 .contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-1,
 .contents > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-2,
@@ -1000,16 +1049,19 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
 .contents > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3,
 .contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3  {
     flex: 1;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
+    padding: 0 10px;
 }
 
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-1,
 .contents > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-1,
 .contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-1 {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
 }
 
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-1 > .c-1,
 .contents > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-1 > .c-1,
 .contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-1 > .c-1 {
     font-size: 14px;
@@ -1018,21 +1070,80 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     text-decoration: none;
 }
 
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-1 > .c-1:hover,
 .contents > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-1 > .c-1:hover,
 .contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-1 > .c-1:hover {
     color: #3139d4;
 }
 
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-2,
 .contents > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-2,
 .contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-2 {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-2 > h5,
 .contents > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-2 > h5,
 .contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-2 > h5 {
     color: rgb(189, 189, 189);
     font-weight: 500;
+    font-size: 13px;
+}
+
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-2 > h5 > .c-2,
+.contents > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-2 > h5 > .c-2,
+.contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-2 > h5 > .c-2 {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-2 > h5 > .c-2:hover,
+.contents > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-2 > h5 > .c-2:hover,
+.contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-2 > h5 > .c-2:hover {
+    color: #3139d4;
+}
+
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3,
+.contents > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3,
+.contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3 > .stars,
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3 > .value,
+.contents > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3 > .stars,
+.contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3 > .stars,
+.contents > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3 > .value,
+.contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3 > .value {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #fff; */
+}
+
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3 > .stars,
+.contents > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3 > .stars,
+.contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3 > .stars {
+    gap: 2px;
+}
+
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3 > .value > h5,
+.contents > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3 > .value > h5,
+.contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3 > .value > h5 {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(162, 160, 160);
+}
+
+.contents-comics > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3 > .stars > .fa-star,
+.contents > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3 > .stars > .fa-star,
+.contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3 > .stars > .fa-star {
+    color: #ffd700;
     font-size: 13px;
 }
 
@@ -1069,11 +1180,11 @@ footer > .container-footer > a {
 }
 
 /* comics */
-.content-comics {
+/* .content-comics {
     width: 90%;
     min-height: 300px;
     margin: 130px auto 10px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
     gap: 10px;
 }
@@ -1081,14 +1192,14 @@ footer > .container-footer > a {
 .content-comics > .main-content{
     width: 70%;
     min-height: 500px;
-    /* border: 1px solid white; */
+    border: 1px solid white;
     
 }
 
 .content-comics > .main-content > .comics-container{
     width: 100%;
     min-height: 300px;
-    /* border: 1px solid white; */
+    border: 1px solid white;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 320px;
@@ -1097,7 +1208,7 @@ footer > .container-footer > a {
 }
 
 .content-comics > .main-content > .comics-container > .item{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     border-radius: 3px;
@@ -1120,13 +1231,14 @@ footer > .container-footer > a {
     width: 100%;
     height: 35%;
     border: 1px solid green;
-}
+} */
 
 @media screen and (min-width: 1401px) {
     nav > .navbar > .navbar-top > .navbar-container,
     nav > .navbar > .navbar-bottom > .navbar-container,
     .contents,
     .contents-bookmarks,
+    .contents-comics,
     footer > .container-footer {
         width: 1200px;
     }
@@ -1154,6 +1266,7 @@ footer > .container-footer > a {
 } */
 
 @media screen and (max-width: 1255px) {
+    .contents-comics > .main-contents > .manga-list > .box,
     .contents > .main-contents > .popular > .box,
     .contents-bookmarks > .main-contents-bookmarks > .box > .items {
         grid-template-columns: repeat(4, 1fr);
@@ -1169,6 +1282,7 @@ footer > .container-footer > a {
 }
 
 @media screen and (max-width: 1100px) {
+    .contents-comics > .main-contents > .manga-list > .box,
     .contents > .main-contents > .popular > .box,
     .contents-bookmarks > .main-contents-bookmarks > .box > .items {
         grid-template-rows: 330px;
@@ -1185,11 +1299,14 @@ footer > .container-footer > a {
 }
 
 @media screen and (max-width: 1100px) {
+    
+    .contents-comics > .main-contents > .manga-list > .box > .item > .image-container,
     .contents > .main-contents > .popular > .box > .item > .image-container,
     .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .image-container {
         height: 60%;
     }
 
+    .contents-comics > .main-contents > .manga-list > .box > .item > .desc-container,
     .contents > .main-contents > .popular > .box > .item > .desc-container,
     .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .desc-container {
         height: 40%;
@@ -1205,16 +1322,19 @@ footer > .container-footer > a {
 } */
 
 @media screen and (max-width: 974px) {
+    .contents-comics > .main-contents,
     .contents > .main-contents,
     .contents-bookmarks > .main-contents-bookmarks {
         width: 60%;
     }
 
+    .contents-comics > .sidebar, 
     .contents > .sidebar, 
     .contents-bookmarks > .sidebar {
         width: 40%;
     }
 
+    .contents-comics > .main-contents > .manga-list > .box,
     .contents > .main-contents > .popular > .box,
     .contents-bookmarks > .main-contents-bookmarks > .box > .items {
         grid-template-columns: repeat(3, 1fr);
@@ -1266,13 +1386,16 @@ footer > .container-footer > a {
 }
 
 @media screen and (max-width: 850px) {
+    .contents-comics > .main-contents,
     .contents > .main-contents,
     .contents-bookmarks > .main-contents-bookmarks,
+    .contents-comics > .sidebar,
     .contents > .sidebar,
     .contents-bookmarks > .sidebar {
         width: 50%;
     }
 
+    .contents-comics > .main-contents > .manga-list > .box,
     .contents > .main-contents > .popular > .box,
     .contents-bookmarks > .main-contents-bookmarks > .box > .items {
         grid-template-columns: repeat(2, 1fr);
@@ -1287,6 +1410,7 @@ footer > .container-footer > a {
 }
 
 @media screen and (max-width: 650px) {
+    .contents-comics > .main-contents > .manga-list > .box,
     .contents > .main-contents > .popular > .box,
     .contents-bookmarks > .main-contents-bookmarks > .box > .items {
         grid-template-columns: repeat(2, 1fr);
@@ -1295,7 +1419,9 @@ footer > .container-footer > a {
         grid-auto-rows: 320px;
     }
 
+    .contents-comics > .main-contents > .manga-list > .box > .item > .image-container,
     .contents > .main-contents > .popular > .box > .item > .image-container,
+    .contents-comics > .main-contents > .manga-list > .box > .item > .desc-container,
     .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .image-container,
     .contents > .main-contents > .popular > .box > .item > .desc-container,
     .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .desc-container {
@@ -1393,24 +1519,29 @@ footer > .container-footer > a {
         margin: 70px auto 10px;
         height: 250px;
     }
-
+    
+    .contents-comics,
     .contents-bookmarks {
         margin-top: 80px;
     }
 
+    .contents-comics,
     .contents,
     .contents-bookmarks {
         flex-wrap: wrap;
     }
 
+    .contents-comics > .main-contents,
     .contents-bookmarks > .main-contents-bookmarks,
     .contents > .main-contents,
+    .contents-comics > .sidebar,
     .contents > .sidebar,
     .contents-bookmarks > .sidebar {
         width: 100%;
         /* border: 1px solid #fff; */
     }
 
+    .contents-comics > .main-contents > .manga-list > .box,
     .contents > .main-contents > .popular > .box,
     .contents-bookmarks > .main-contents-bookmarks > .box > .items {
         grid-template-columns: repeat(2, 1fr);
@@ -1419,11 +1550,13 @@ footer > .container-footer > a {
         grid-auto-rows: 340px;
     }
 
+    .contents-comics > .main-contents > .manga-list > .box > .item > .image-container,
     .contents > .main-contents > .popular > .box > .item > .image-container,
     .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .image-container {
         height: 64%;
     }
 
+    .contents-comics > .main-contents > .manga-list > .box > .item > .desc-container,
     .contents > .main-contents > .popular > .box > .item > .desc-container,
     .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .desc-container {
         height: 36%;
@@ -1453,11 +1586,13 @@ footer > .container-footer > a {
 }
 
 @media screen and (max-width: 360px) {
+    .contents-comics > .main-contents > .manga-list > .box > .item > .image-container,
     .contents > .main-contents > .popular > .box > .item > .image-container,
     .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .image-container {
         height: 60%;
     }
 
+    .contents-comics > .main-contents > .manga-list > .box > .item > .desc-container,
     .contents > .main-contents > .popular > .box > .item > .desc-container,
     .contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .desc-container {
         height: 40%;

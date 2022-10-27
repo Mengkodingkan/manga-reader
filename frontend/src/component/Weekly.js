@@ -16,9 +16,20 @@ const Weekly = () => {
                         <Link to="/" className='c-1'>Existence</Link>
                     </div>
                     <div className='b-2'>
-                        <h5>Genres: </h5>
+                        <h5>Genres: <Link to="/" className='c-2'>Action</Link> <Link to="/" className='c-2'>Adventure</Link> <Link to="/" className='c-2'>Fantasy</Link></h5>
                     </div>
-                    <div className='b-3'></div>
+                    <div className='b-3'>
+                        <div className='stars'>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <div className='value'>
+                            <h5>10</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="item">
@@ -33,9 +44,20 @@ const Weekly = () => {
                         <Link to="/" className='c-1'>Existence</Link>
                     </div>
                     <div className='b-2'>
-                        <h5>Genres: </h5>
+                        <h5>Genres: <Link to="/" className='c-2'>Action</Link> <Link to="/" className='c-2'>Adventure</Link> <Link to="/" className='c-2'>Fantasy</Link></h5>
                     </div>
-                    <div className='b-3'></div>
+                    <div className='b-3'>
+                        <div className='stars'>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <div className='value'>
+                            <h5>10</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="item">
@@ -50,9 +72,20 @@ const Weekly = () => {
                         <Link to="/" className='c-1'>Existence</Link>
                     </div>
                     <div className='b-2'>
-                        <h5>Genres: </h5>
+                        <h5>Genres: <Link to="/" className='c-2'>Action</Link> <Link to="/" className='c-2'>Adventure</Link> <Link to="/" className='c-2'>Fantasy</Link></h5>
                     </div>
-                    <div className='b-3'></div>
+                    <div className='b-3'>
+                        <div className='stars'>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <div className='value'>
+                            <h5>10</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="item">
@@ -67,9 +100,20 @@ const Weekly = () => {
                         <Link to="/" className='c-1'>Existence</Link>
                     </div>
                     <div className='b-2'>
-                        <h5>Genres: </h5>
+                        <h5>Genres: <Link to="/" className='c-2'>Action</Link> <Link to="/" className='c-2'>Adventure</Link> <Link to="/" className='c-2'>Fantasy</Link></h5>
                     </div>
-                    <div className='b-3'></div>
+                    <div className='b-3'>
+                        <div className='stars'>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <div className='value'>
+                            <h5>10</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="item">
@@ -84,9 +128,20 @@ const Weekly = () => {
                         <Link to="/" className='c-1'>Existence</Link>
                     </div>
                     <div className='b-2'>
-                        <h5>Genres: </h5>
+                        <h5>Genres: <Link to="/" className='c-2'>Action</Link> <Link to="/" className='c-2'>Adventure</Link> <Link to="/" className='c-2'>Fantasy</Link></h5>
                     </div>
-                    <div className='b-3'></div>
+                    <div className='b-3'>
+                        <div className='stars'>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <div className='value'>
+                            <h5>10</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="item">
@@ -101,9 +156,20 @@ const Weekly = () => {
                         <Link to="/" className='c-1'>Existence</Link>
                     </div>
                     <div className='b-2'>
-                        <h5>Genres: </h5>
+                        <h5>Genres: <Link to="/" className='c-2'>Action</Link> <Link to="/" className='c-2'>Adventure</Link> <Link to="/" className='c-2'>Fantasy</Link></h5>
                     </div>
-                    <div className='b-3'></div>
+                    <div className='b-3'>
+                        <div className='stars'>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                            <i className="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <div className='value'>
+                            <h5>10</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
