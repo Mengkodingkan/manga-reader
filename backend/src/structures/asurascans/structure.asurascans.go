@@ -70,3 +70,12 @@ type MangaDetailResponse struct {
 	Keywords      []string      `json:"keywords"`
 	Chapters      []interface{} `json:"chapters"`
 }
+
+// ChapterDetailResponse is a struct for chapter detail response
+
+type ChapterResponse struct {
+	Title       string        `json:"title"`
+	Images      []interface{} `json:"images"`
+	PrevChapter interface{}   `json:"prev_chapter"`
+	NextChapter interface{}   `json:"next_chapter"`
+}

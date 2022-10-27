@@ -3,6 +3,7 @@ package asurascans
 import (
 	"strings"
 
+	util "Mengkodingkan.com/manga-reader/src/Util"
 	http "Mengkodingkan.com/manga-reader/src/http"
 	"Mengkodingkan.com/manga-reader/src/structures"
 	asura_structure "Mengkodingkan.com/manga-reader/src/structures/asurascans"
@@ -399,4 +400,93 @@ func GetComic(c *gin.Context) {
 		Data:   MangaDetail,
 	})
 
+}
+
+func GetChapter(c *gin.Context) {
+	endpoint := c.Param("endpoint")
+	if endpoint == "" {
+		c.JSON(400, structures.Error{
+			Status:  "error",
+			Message: "Missing Endpoint",
+		})
+		return
+	}
+
+	res := http.Get(BASE_URL + "/" + endpoint)
+	if res.StatusCode != 200 {
+		c.JSON(404, structures.Error{
+			Status:  "error",
+			Message: "Not Found",
+		})
+	}
+
+	doc, err := goquery.NewDocumentFromReader(res.Body)
+	if err != nil {
+		c.JSON(400, structures.Error{
+			Status:  "error",
+			Message: "Bad Request",
+		})
+	}
+
+	var ChapterResponse asura_structure.ChapterResponse
+
+	ChapterResponse.Title = doc.Find(".entry-title").Text()
+
+	ChapterResponse.Images = make([]interface{}, 0)
+	doc.Find("#readerarea").Find("img").Each(func(i int, s *goquery.Selection) {
+
+		ChapterResponse.Images = append(ChapterResponse.Images, struct {
+			Url    string `json:"url"`
+			Width  string `json:"width"`
+			Height string `json:"height"`
+		}{
+			Url:    s.AttrOr("src", "No URL"),
+			Width:  s.AttrOr("width", "No Width"),
+			Height: s.AttrOr("height", "No Height"),
+		})
+	})
+
+	name := strings.Split(endpoint, "-")
+	chapter_num := util.ToInt(name[len(name)-1])
+
+	next_num := chapter_num + 1
+	name[len(name)-1] = util.ToString(next_num)
+	next_res := http.Head(BASE_URL + "/" + strings.Join(name, "-"))
+	if next_res.StatusCode == 404 {
+		ChapterResponse.NextChapter = nil
+	} else {
+		ChapterResponse.NextChapter = struct {
+			Name     string `json:"name"`
+			Url      string `json:"url"`
+			Endpoint string `json:"endpoint"`
+		}{
+			Name:     "Chapter " + util.ToString(chapter_num),
+			Url:      BASE_URL + "/" + strings.Join(name, "-"),
+			Endpoint: strings.Join(name, "-"),
+		}
+	}
+
+	prev_num := chapter_num - 1
+	name[len(name)-1] = util.ToString(prev_num)
+	prev_res := http.Head(BASE_URL + "/" + strings.Join(name, "-"))
+	if prev_res.StatusCode == 404 {
+		ChapterResponse.PrevChapter = nil
+	} else {
+		ChapterResponse.PrevChapter = struct {
+			Name     string `json:"name"`
+			Url      string `json:"url"`
+			Endpoint string `json:"endpoint"`
+		}{
+			Name:     "Chapter " + util.ToString(chapter_num),
+			Url:      BASE_URL + "/" + strings.Join(name, "-"),
+			Endpoint: strings.Join(name, "-"),
+		}
+	}
+
+	defer res.Body.Close()
+
+	c.JSON(200, structures.Success{
+		Status: "success",
+		Data:   ChapterResponse,
+	})
 }
