@@ -60,7 +60,7 @@ const Comics = () => {
                 <div className='main-contents'>
                     <div className='manga-list'>
                         <div className='title'>
-                            <h5>Manga List</h5>
+                            <h5>Manga Lists</h5>
                         </div>
                         <div className='box'>
                             <div className='item'>
