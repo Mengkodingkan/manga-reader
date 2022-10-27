@@ -1,7 +1,12 @@
 const All = () => {
     return (
-        <div className="contents-sidebar">
-            <h1>All Page</h1>
+        <div className="box">
+            <div className="item"></div>
+            <div className="item"></div>
+            <div className="item"></div>
+            <div className="item"></div>
+            <div className="item"></div>
+            <div className="item"></div>
         </div>
     )
 }
