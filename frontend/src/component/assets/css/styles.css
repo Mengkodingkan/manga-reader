@@ -489,18 +489,19 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     background-color: rgba(38, 42, 50, .4);
 }
 
-.contents-comics > .main-contents > .manga-list > .box > .item:hover > .desc-container > h4,
-.contents > .main-contents > .popular > .box > .item:hover > .desc-container > h4,
-.contents-bookmarks > .main-contents-bookmarks > .box > .items > .item:hover > .desc-container > h4 {
+.contents-comics > .main-contents > .manga-list > .box > .item:hover > .desc-container > .btn-detail,
+.contents > .main-contents > .popular > .box > .item:hover > .desc-container > .btn-detail,
+.contents-bookmarks > .main-contents-bookmarks > .box > .items > .item:hover > .desc-container > .btn-detail {
     color: #3139d4;
 }
 
-.contents-comics > .main-contents > .manga-list > .box > .item > .desc-container > h4,
-.contents > .main-contents > .popular > .box > .item > .desc-container > h4,
-.contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .desc-container > h4 {
+.contents-comics > .main-contents > .manga-list > .box > .item > .desc-container > .btn-detail,
+.contents > .main-contents > .popular > .box > .item > .desc-container > .btn-detail,
+.contents-bookmarks > .main-contents-bookmarks > .box > .items > .item > .desc-container > .btn-detail {
     font-weight: 600;
     color: #fff;
     font-size: 13px;
+    text-decoration: none;
 }
 
 .contents-comics > .main-contents > .manga-list > .box > .item > .desc-container > h5,
@@ -832,7 +833,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     flex-direction: column;
     flex-wrap: wrap;
     padding: 10px;
-    gap: 10px;
+    gap: 7px;
 }
 
 /* sidebar */
@@ -1145,6 +1146,24 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
 .contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3 > .stars > .fa-star {
     color: #ffd700;
     font-size: 13px;
+}
+
+/* detail comic */
+.detail-comic {
+    width: 90%;
+    min-height: 300px;
+    margin: 130px auto 10px;
+    /* border: 1px solid #fff; */
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.detail-comic > .main-contents {
+    width: 70%;
+    min-height: 300px;
+    /* border: 1px solid #fff; */
+    display: flex;
 }
 
 /* footer  */

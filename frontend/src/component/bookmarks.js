@@ -1,6 +1,7 @@
 import Header from './Header';
 import Sidebar from './Sidebar';
 import bookmarkImage from './assets/img/7.webp';
+import { Link } from 'react-router-dom';
 
 const Bookmarks = () => {
     return (
@@ -24,7 +25,7 @@ const Bookmarks = () => {
                                     <div className='hover'></div>
                                 </div>
                                 <div className='desc-container'>
-                                    <h4>I'll Be Taking A Break For Personal Reasons</h4>
+                                    <Link to="/detail" className='btn-detail'>I 'll Be Taking A Break...</Link>
                                     <h5>Chapter 20</h5>
                                     <div className='rating'>
                                         <div className='stars'>
@@ -46,7 +47,7 @@ const Bookmarks = () => {
                                     <div className='hover'></div>
                                 </div>
                                 <div className='desc-container'>
-                                    <h4>I'll Be Taking A Break For Personal Reasons</h4>
+                                    <Link to="/detail" className='btn-detail'>I 'll Be Taking A Break...</Link>
                                     <h5>Chapter 20</h5>
                                     <div className='rating'>
                                         <div className='stars'>
@@ -68,7 +69,7 @@ const Bookmarks = () => {
                                     <div className='hover'></div>
                                 </div>
                                 <div className='desc-container'>
-                                    <h4>I'll Be Taking A Break For Personal Reasons</h4>
+                                    <Link to="/detail" className='btn-detail'>I 'll Be Taking A Break...</Link>
                                     <h5>Chapter 20</h5>
                                     <div className='rating'>
                                         <div className='stars'>
@@ -90,7 +91,7 @@ const Bookmarks = () => {
                                     <div className='hover'></div>
                                 </div>
                                 <div className='desc-container'>
-                                    <h4>I'll Be Taking A Break For Personal Reasons</h4>
+                                    <Link to="/detail" className='btn-detail'>I 'll Be Taking A Break...</Link>
                                     <h5>Chapter 20</h5>
                                     <div className='rating'>
                                         <div className='stars'>
@@ -112,7 +113,7 @@ const Bookmarks = () => {
                                     <div className='hover'></div>
                                 </div>
                                 <div className='desc-container'>
-                                    <h4>I'll Be Taking A Break For Personal Reasons</h4>
+                                    <Link to="/detail" className='btn-detail'>I 'll Be Taking A Break...</Link>
                                     <h5>Chapter 20</h5>
                                     <div className='rating'>
                                         <div className='stars'>

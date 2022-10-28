@@ -2,7 +2,7 @@ import Header from './Header';
 import Sidebar from './Sidebar';
 // import ComicsImage from './assets/img/carousel-1.jpg';
 import ComicsImage2 from './assets/img/7.webp';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Comics = () => {
     return (
@@ -69,7 +69,7 @@ const Comics = () => {
                                     <div className='hover'></div>
                                 </div>
                                 <div className='desc-container'>
-                                    <h4>I'll Be Taking A Break For Personal Reasons</h4>
+                                    <Link to="/detail" className='btn-detail'>I 'll Be Taking A Break...</Link>
                                     <h5>Chapter 20</h5>
                                     <div className='rating'>
                                         <div className='stars'>
@@ -91,7 +91,7 @@ const Comics = () => {
                                     <div className='hover'></div>
                                 </div>
                                 <div className='desc-container'>
-                                    <h4>I'll Be Taking A Break For Personal Reasons</h4>
+                                    <Link to="/detail" className='btn-detail'>I 'll Be Taking A Break...</Link>
                                     <h5>Chapter 20</h5>
                                     <div className='rating'>
                                         <div className='stars'>
@@ -113,7 +113,7 @@ const Comics = () => {
                                     <div className='hover'></div>
                                 </div>
                                 <div className='desc-container'>
-                                    <h4>I'll Be Taking A Break For Personal Reasons</h4>
+                                    <Link to="/detail" className='btn-detail'>I 'll Be Taking A Break...</Link>
                                     <h5>Chapter 20</h5>
                                     <div className='rating'>
                                         <div className='stars'>
@@ -135,7 +135,7 @@ const Comics = () => {
                                     <div className='hover'></div>
                                 </div>
                                 <div className='desc-container'>
-                                    <h4>I'll Be Taking A Break For Personal Reasons</h4>
+                                    <Link to="/detail" className='btn-detail'>I 'll Be Taking A Break...</Link>
                                     <h5>Chapter 20</h5>
                                     <div className='rating'>
                                         <div className='stars'>
@@ -157,7 +157,7 @@ const Comics = () => {
                                     <div className='hover'></div>
                                 </div>
                                 <div className='desc-container'>
-                                    <h4>I'll Be Taking A Break For Personal Reasons</h4>
+                                    <Link to="/detail" className='btn-detail'>I 'll Be Taking A Break...</Link>
                                     <h5>Chapter 20</h5>
                                     <div className='rating'>
                                         <div className='stars'>
@@ -179,7 +179,7 @@ const Comics = () => {
                                     <div className='hover'></div>
                                 </div>
                                 <div className='desc-container'>
-                                    <h4>I'll Be Taking A Break For Personal Reasons</h4>
+                                    <Link to="/detail" className='btn-detail'>I 'll Be Taking A Break...</Link>
                                     <h5>Chapter 20</h5>
                                     <div className='rating'>
                                         <div className='stars'>
@@ -201,7 +201,7 @@ const Comics = () => {
                                     <div className='hover'></div>
                                 </div>
                                 <div className='desc-container'>
-                                    <h4>I'll Be Taking A Break For Personal Reasons</h4>
+                                    <Link to="/detail" className='btn-detail'>I 'll Be Taking A Break...</Link>
                                     <h5>Chapter 20</h5>
                                     <div className='rating'>
                                         <div className='stars'>
@@ -223,7 +223,7 @@ const Comics = () => {
                                     <div className='hover'></div>
                                 </div>
                                 <div className='desc-container'>
-                                    <h4>I'll Be Taking A Break For Personal Reasons</h4>
+                                    <Link to="/detail" className='btn-detail'>I 'll Be Taking A Break...</Link>
                                     <h5>Chapter 20</h5>
                                     <div className='rating'>
                                         <div className='stars'>
@@ -245,7 +245,7 @@ const Comics = () => {
                                     <div className='hover'></div>
                                 </div>
                                 <div className='desc-container'>
-                                    <h4>I'll Be Taking A Break For Personal Reasons</h4>
+                                    <Link to="/detail" className='btn-detail'>I 'll Be Taking A Break...</Link>
                                     <h5>Chapter 20</h5>
                                     <div className='rating'>
                                         <div className='stars'>
@@ -267,7 +267,7 @@ const Comics = () => {
                                     <div className='hover'></div>
                                 </div>
                                 <div className='desc-container'>
-                                    <h4>I'll Be Taking A Break For Personal Reasons</h4>
+                                    <Link to="/detail" className='btn-detail'>I 'll Be Taking A Break...</Link>
                                     <h5>Chapter 20</h5>
                                     <div className='rating'>
                                         <div className='stars'>
