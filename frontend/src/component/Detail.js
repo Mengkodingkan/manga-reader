@@ -12,7 +12,12 @@ const Detail = () => {
                     <div className='box'>
                         <Link to="/" className='f-1'>Manga Reader </Link> <span>&#62;</span> <Link to="/detail" className='f-1'>I'll Be Taking A Break For Personal Reasons</Link>
                     </div>
-                    <div className='box'></div>
+                    <div className='box'>
+                        <div className='item'>
+                            <div className='thumbnail'></div>
+                            <div className='info'></div>
+                        </div>
+                    </div>
                     <div className='box'></div>
                 </div>
 
