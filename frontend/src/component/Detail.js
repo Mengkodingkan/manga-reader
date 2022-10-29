@@ -1,6 +1,7 @@
 import Header from './Header';
 import Sidebar from './Sidebar';
 import { Link } from 'react-router-dom';
+import ComicsImage2 from './assets/img/7.webp';
 
 const Detail = () => {
     return (
@@ -14,9 +15,34 @@ const Detail = () => {
                     </div>
                     <div className='box'>
                         <div className='item'>
-                            <div className='thumbnail'></div>
-                            <div className='info'></div>
+                            <div className='image-container'>
+                                <img src={ComicsImage2} alt="" />
+                            </div>
+                            <div className='desc-container'>
+                                <button type="submit" className="btn-bookmark">
+                                    <i className="fa-regular fa-bookmark"></i> <h5>Bookmark</h5>
+                                </button>
+                                <div className='rating'>
+                                    <div className='stars'>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                        <i className="fa-sharp fa-solid fa-star"></i>
+                                    </div>
+                                    <div className='value'>
+                                        <h5>10</h5>
+                                    </div>
+                                </div>
+                                <div className='status'>
+                                    <h5>Status</h5> <h5>Ongoing</h5>
+                                </div>
+                                <div className='type'>
+                                    <h5>Type</h5> <Link to="/" className='g-1'>Manhwa</Link>
+                                </div>
+                            </div>
                         </div>
+                        <div className='item'></div>
                     </div>
                     <div className='box'></div>
                 </div>
