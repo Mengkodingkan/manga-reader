@@ -11,7 +11,7 @@ const Detail = () => {
             <div className='detail-comic'>
                 <div className='main-contents'>
                     <div className='box'>
-                        <Link to="/" className='f-1'>Manga Reader </Link> <span>&#62;</span> <Link to="/detail" className='f-1'>I'll Be Taking A Break For Personal Reasons</Link>
+                        <Link to="/" className='f-1'>Manga Reader </Link> <span>&#62;</span> <Link to="/detail" className='f-1'>I'll Be Taking ...</Link>
                     </div>
                     <div className='box'>
                         <div className='item'>
@@ -34,11 +34,13 @@ const Detail = () => {
                                         <h5>10</h5>
                                     </div>
                                 </div>
-                                <div className='status'>
-                                    <h5>Status</h5> <h5>Ongoing</h5>
-                                </div>
-                                <div className='type'>
-                                    <h5>Type</h5> <Link to="/" className='g-1'>Manhwa</Link>
+                                <div className='container'>
+                                    <div className='status'>
+                                        <h5>Status</h5> <h5>Ongoing</h5>
+                                    </div>
+                                    <div className='type'>
+                                        <h5>Type</h5> <Link to="/" className='g-1'>Manhwa</Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>
