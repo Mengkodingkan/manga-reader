@@ -141,16 +141,46 @@ const Detail = () => {
                                 </button>
                             </div>
                             <div className='bottom'>
-                                <div className='chapter'></div>
-                                <div className='chapter'></div>
-                                <div className='chapter'></div>
-                                <div className='chapter'></div>
-                                <div className='chapter'></div>
-                                <div className='chapter'></div>
-                                <div className='chapter'></div>
-                                <div className='chapter'></div>
-                                <div className='chapter'></div>
-                                <div className='chapter'></div>
+                                <div className='chapter'>
+                                    <h5>Chapter 10</h5>
+                                    <h5>October 9, 2022</h5>
+                                </div>
+                                <div className='chapter'>
+                                    <h5>Chapter 9</h5>
+                                    <h5>October 9, 2022</h5>
+                                </div>
+                                <div className='chapter'>
+                                    <h5>Chapter 8</h5>
+                                    <h5>October 9, 2022</h5>
+                                </div>
+                                <div className='chapter'>
+                                    <h5>Chapter 7</h5>
+                                    <h5>October 9, 2022</h5>
+                                </div>
+                                <div className='chapter'>
+                                    <h5>Chapter 6</h5>
+                                    <h5>October 9, 2022</h5>
+                                </div>
+                                <div className='chapter'>
+                                    <h5>Chapter 5</h5>
+                                    <h5>October 9, 2022</h5>
+                                </div>
+                                <div className='chapter'>
+                                    <h5>Chapter 4</h5>
+                                    <h5>October 9, 2022</h5>
+                                </div>
+                                <div className='chapter'>
+                                    <h5>Chapter 3</h5>
+                                    <h5>October 9, 2022</h5>
+                                </div>
+                                <div className='chapter'>
+                                    <h5>Chapter 2</h5>
+                                    <h5>October 9, 2022</h5>
+                                </div>
+                                <div className='chapter'>
+                                    <h5>Chapter 1</h5>
+                                    <h5>October 9, 2022</h5>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1575,7 +1575,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
 
 .detail-comic > .main-contents > .box:nth-child(3) > .item:nth-child(2) > .middle {
     width: 100%;
-    height: 35px;
+    height: 40px;
     display: flex;
     border: 1px solid rgba(255, 255, 255, .1);
     /* border: 1px solid #fff; */
@@ -1597,7 +1597,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
 }
 
 .detail-comic > .main-contents > .box:nth-child(3) > .item:nth-child(2) > .middle > .btn-search {
-    width: 50px;
+    width: 40px;
     background-color: #2e333d;
     height: 100%;
     border: none;
@@ -1624,6 +1624,32 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     border: 1px solid rgba(255, 255, 255, .1);
     border-radius: 3px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.detail-comic > .main-contents > .box:nth-child(3) > .item:nth-child(2) > .bottom > .chapter:hover > h5:nth-child(1) {
+    color: #3139d4;
+}
+
+.detail-comic > .main-contents > .box:nth-child(3) > .item:nth-child(2) > .bottom > .chapter:hover {
+    background-color: #333943;
+}
+
+.detail-comic > .main-contents > .box:nth-child(3) > .item:nth-child(2) > .bottom > .chapter > h5 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.detail-comic > .main-contents > .box:nth-child(3) > .item:nth-child(2) > .bottom > .chapter > h5:nth-child(2) {
+    color: rgb(184, 182, 182);
+    font-size: 13px;
+    font-weight: 400;
 }
 
 .detail-comic > .main-contents > .box:nth-child(3) > .item:nth-child(2) > .top > .first-chapter {
