@@ -11,7 +11,7 @@ const Detail = () => {
             <div className='detail-comic'>
                 <div className='main-contents'>
                     <div className='box'>
-                        <Link to="/" className='f-1'>Manga Reader </Link> <span>&#62;</span> <Link to="/detail" className='f-1'>I'll Be Taking ...</Link>
+                        <Link to="/" className='f-1'>Manga Reader </Link> <span>&#62;</span> <Link to="/detail" className='f-1'>Heavenly Inquisition Sword</Link>
                     </div>
                     <div className='container'>
                         <div className='box'>
@@ -123,7 +123,36 @@ const Detail = () => {
                         <div className='item'>
                             <h5>Chapter I'll Be Taking A Break For Personal Reasons</h5>
                         </div>
-                        <div className='item'></div>
+                        <div className='item'>
+                            <div className='top'>
+                                <div className='first-chapter'>
+                                    <h5>First Chapter</h5>
+                                    <h4>Chapter 1</h4>
+                                </div>
+                                <div className='new-chapter'>
+                                    <h5>New Chapter</h5>
+                                    <h4>Chapter 10</h4>
+                                </div>
+                            </div>
+                            <div className='middle'>
+                                <input type="text" placeholder='Search Chapter. Example: 25 or 178'/>
+                                <button type="submit" className="btn-search">
+                                    <i className="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                            <div className='bottom'>
+                                <div className='chapter'></div>
+                                <div className='chapter'></div>
+                                <div className='chapter'></div>
+                                <div className='chapter'></div>
+                                <div className='chapter'></div>
+                                <div className='chapter'></div>
+                                <div className='chapter'></div>
+                                <div className='chapter'></div>
+                                <div className='chapter'></div>
+                                <div className='chapter'></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
