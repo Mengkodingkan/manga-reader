@@ -1524,10 +1524,35 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
 
 .detail-comic > .main-contents > .box:nth-child(3) {
     width: 100%;
-    min-height: 300px;
+    /* min-height: 300px; */
     /* border: 1px solid #fff; */
     border-radius: 3px;
     background-color: #2e333d;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    overflow: hidden;
+}
+
+.detail-comic > .main-contents > .box:nth-child(3) > .item:nth-child(1) {
+    width: 100%;
+    min-height: 50px;
+    border-bottom: 1px solid rgb(81, 81, 81);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.detail-comic > .main-contents > .box:nth-child(3) > .item:nth-child(1) > h5 {
+    font-size: 15px;
+    color: #fff;
+}
+
+.detail-comic > .main-contents > .box:nth-child(3) > .item:nth-child(2) {
+    width: 100%;
+    min-height: 100px;
+    /* border: 1px solid #fff; */
 }
 
 /* footer  */

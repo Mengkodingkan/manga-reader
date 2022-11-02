@@ -119,7 +119,12 @@ const Detail = () => {
                             <p><span>keywords: </span>read i'll be taking a break for personal reasons, i'll be taking a break for personal reasons english, i'll be taking a break for personal reasons eng, download i'll be taking a break for personal reasons eng, read i'll be taking a break for personal reasons online</p>
                         </div>
                     </div>
-                    <div className='box'></div>
+                    <div className='box'>
+                        <div className='item'>
+                            <h5>Chapter I'll Be Taking A Break For Personal Reasons</h5>
+                        </div>
+                        <div className='item'></div>
+                    </div>
                 </div>
 
                 <Sidebar />
