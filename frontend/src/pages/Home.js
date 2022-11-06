@@ -1,8 +1,8 @@
-import Header from "./Header";
-import Sidebar from "./Sidebar";
-import Carousel from "./Carousel";
-import ComicsImage from "./assets/img/carousel-1.jpg";
-import ComicsImage2 from "./assets/img/7.webp";
+import Header from "../component/Header";
+import Sidebar from "../component/Sidebar";
+import Carousel from "../component/Carousel";
+import ComicsImage from "../component/assets/img/carousel-1.jpg";
+// import ComicsImage2 from "../component/assets/img/7.webp";
 // import Monthly from './Monthly';
 // import Weekly from './Weekly';
 // import All from './All';
@@ -413,7 +413,6 @@ const Home = () => {
     </>
   );
 
-  //   return (
   //     <>
   //       <Header />
 
