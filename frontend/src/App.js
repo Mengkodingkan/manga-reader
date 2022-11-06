@@ -4,7 +4,7 @@ import Header from "./component/Header";
 import Home from "./pages/Home";
 import Bookmarks from "./pages/Bookmarks";
 import Comics from "./pages/comics";
-import Detail from "./component/Detail";
+import Detail from "./pages/Detail";
 import Footer from "./component/Footer";
 import "./component/assets/css/styles.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";

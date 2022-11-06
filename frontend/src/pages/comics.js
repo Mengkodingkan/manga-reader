@@ -7,53 +7,6 @@ const Comics = () => {
   return (
     <>
       <Header />
-      {/* <div className='content-comics'>
-                <div className='main-content'>
-                    <div className='comics-container'>
-                        <div className='item'>
-                            <div className='img-container'>
-                                <img src={comicsImage} alt="" />
-                            </div>
-                            <div className='desc-container'>
-
-                            </div>
-                        </div>
-                        <div className='item'>
-                            <div className='img-container'>
-                                <img src={comicsImage} alt="" />    
-                            </div>
-                            <div className='desc-container'>
-
-                            </div>
-                        </div>
-                        <div className='item'>
-                            <div className='img-container'>
-                                <img src={comicsImage} alt="" />    
-                            </div>
-                            <div className='desc-container'>
-
-                            </div>
-                        </div>
-                        <div className='item'>
-                            <div className='img-container'>
-                                <img src={comicsImage} alt="" />    
-                            </div>
-                            <div className='desc-container'>
-
-                            </div>
-                        </div>
-                        <div className='item'>
-                            <div className='img-container'>
-                                <img src={comicsImage} alt="" />    
-                            </div>
-                            <div className='desc-container'>
-
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div> */}
 
       <div className="contents-comics">
         <div className="main-contents">
