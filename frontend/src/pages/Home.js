@@ -37,7 +37,7 @@ const Home = () => {
 
   return loading ? (
     <>
-      <h1>TEST LOADING</h1>
+      {/* <h1>TEST LOADING</h1> */}
     </>
   ) : (
     <>
@@ -93,8 +93,12 @@ const Home = () => {
               </div>
             </div>
             <div className="box">
+              <div className="item"></div>
+              <div className="item"></div>
+              <div className="item"></div>
+              <div className="item"></div>
               {/* jadiin 1 box per komik*/}
-              <div className="item">
+              {/* <div className="item">
                 <div className="list">
                   <div className="image-container">
                     <img src={ComicsImage} alt="" />
@@ -403,7 +407,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
