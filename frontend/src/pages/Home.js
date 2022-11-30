@@ -1,8 +1,8 @@
 import Header from "../component/Header";
 import Sidebar from "../component/Sidebar";
 import Carousel from "../component/Carousel";
-import ComicsImage from "../component/assets/img/carousel-1.jpg";
-// import ComicsImage2 from "../component/assets/img/7.webp";
+// import ComicsImage from "../component/assets/img/carousel-1.jpg";
+import ComicsImage2 from "../component/assets/img/7.webp";
 // import Monthly from './Monthly';
 // import Weekly from './Weekly';
 // import All from './All';
@@ -93,10 +93,78 @@ const Home = () => {
               </div>
             </div>
             <div className="box">
-              <div className="item"></div>
-              <div className="item"></div>
-              <div className="item"></div>
-              <div className="item"></div>
+              <div className="item">
+                <div className="card">
+                  <img src={ComicsImage2} alt="title" />
+                </div>
+                <div className="desc">
+                  <div className="box"></div>
+                  <div className="box"></div>
+                </div>
+              </div>
+              <div className="item">
+                <div className="card">
+                  <img src={ComicsImage2} alt="title" />
+                </div>
+                <div className="desc">
+                  <div className="box"></div>
+                  <div className="box"></div>
+                </div>
+              </div>
+              <div className="item">
+                <div className="card">
+                  <img src={ComicsImage2} alt="title" />
+                </div>
+                <div className="desc">
+                  <div className="box"></div>
+                  <div className="box"></div>
+                </div>
+              </div>
+              <div className="item">
+                <div className="card">
+                  <img src={ComicsImage2} alt="title" />
+                </div>
+                <div className="desc">
+                  <div className="box"></div>
+                  <div className="box"></div>
+                </div>
+              </div>
+              <div className="item">
+                <div className="card">
+                  <img src={ComicsImage2} alt="title" />
+                </div>
+                <div className="desc">
+                  <div className="box"></div>
+                  <div className="box"></div>
+                </div>
+              </div>
+              <div className="item">
+                <div className="card">
+                  <img src={ComicsImage2} alt="title" />
+                </div>
+                <div className="desc">
+                  <div className="box"></div>
+                  <div className="box"></div>
+                </div>
+              </div>
+              <div className="item">
+                <div className="card">
+                  <img src={ComicsImage2} alt="title" />
+                </div>
+                <div className="desc">
+                  <div className="box"></div>
+                  <div className="box"></div>
+                </div>
+              </div>
+              <div className="item">
+                <div className="card">
+                  <img src={ComicsImage2} alt="title" />
+                </div>
+                <div className="desc">
+                  <div className="box"></div>
+                  <div className="box"></div>
+                </div>
+              </div>
               {/* jadiin 1 box per komik*/}
               {/* <div className="item">
                 <div className="list">

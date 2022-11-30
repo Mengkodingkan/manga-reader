@@ -626,16 +626,59 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: minmax();
     grid-auto-rows: minmax();
-    gap: 10px;
-    padding: 10px;
+    /* gap: 10px; */
+    /* padding: 10px; */
 }
 
 .contents > .main-contents > .update-lates > .box > .item {
-    border: 1px solid #fff;
     min-height: 100px;
     /* border-radius: 3px; */
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: .1px solid rgba(81, 81, 81, .5);
 }
 
+.contents > .main-contents > .update-lates > .box > .item:last-child,
+.contents > .main-contents > .update-lates > .box > .item:nth-last-child(2) {
+    border: none;
+}
+
+.contents > .main-contents > .update-lates > .box > .item > .card {
+    width: 30%;
+    /* border: 1px solid #fff; */
+    /* min-height: 100px; */
+    display: flex;
+}
+
+.contents > .main-contents > .update-lates > .box > .item > .card > img {
+    width: 100%;
+}
+
+.contents > .main-contents > .update-lates > .box > .item > .desc {
+    width: 70%;
+    /* border: 1px solid #fff; */
+    /* min-height: 100px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contents > .main-contents > .update-lates > .box > .item > .desc > .box:nth-child(1) {
+    width: 100%;
+    min-height: 40px;
+    /* border: 1px solid #fff; */
+    display: flex;
+}
+
+.contents > .main-contents > .update-lates > .box > .item > .desc > .box:nth-child(2) {
+    width: 100%;
+    min-height: 70px;
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 /* bookmarks */
 .contents-bookmarks {
@@ -899,7 +942,6 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     width: 100%;
     min-height: 200px;
     /* border: 1px solid #fff; */
-    background-color: #2e333d;
     display: flex;
     overflow: hidden;
     color: #fff;
@@ -914,7 +956,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     /* border: 1px solid #fff; */
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 .detail-comic > .sidebar > .contents-sidebar > .box > .item,
@@ -927,7 +969,9 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     gap: 5px;
     padding: 10px;
     /* border: 1px solid #fff; */
+    background-color: #2e333d;
     justify-content: center;
+    border-radius: 0 0 3px 3px;
 }
 
 .detail-comic > .sidebar > .contents-sidebar > .box > .item:not(:last-child),
@@ -980,7 +1024,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
     /* border: 1px solid #fff; */
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
 .detail-comic > .sidebar > .contents-sidebar > .box > .item > .a-1 > h5,
@@ -1011,7 +1055,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
 .contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-2,
 .contents > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3,
 .contents-bookmarks > .sidebar > .contents-sidebar > .box > .item > .a-3 > .b-3  {
-    flex: 1;
+    /* flex: 1; */
     /* border: 1px solid #fff; */
     padding: 0 10px;
 }
@@ -1637,7 +1681,8 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
 footer {
     width: 100%;
     height: 40px;
-    background-color: #2e333d;
+    /* background-color: #2e333d; */
+    /* border-top: .1px solid rgba(81, 81, 81, .5); */
     /* border-top: .1px solid rgb(80, 80, 80); */
 }
 
@@ -1784,6 +1829,14 @@ footer > .container-footer > a {
     .detail-comic > .main-contents > .box:nth-child(3) > .item:nth-child(2) > .top > .first-chapter > h4,
     .detail-comic > .main-contents > .box:nth-child(3) > .item:nth-child(2) > .top > .new-chapter > h4 {
         font-size: 18px;
+    }
+
+    .contents > .main-contents > .update-lates > .box {
+        grid-template-columns: 1fr;
+    }
+
+    .contents > .main-contents > .update-lates > .box > .item:nth-last-child(2) {
+        border-bottom: .1px solid rgba(81, 81, 81, .5);
     }
 }
 
