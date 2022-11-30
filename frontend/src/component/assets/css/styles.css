@@ -83,12 +83,14 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .circle-co
     border-radius: 22px;
     background-color: #14161a;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .circle-container > .circle {
     height: 100%;
     width: 50%;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: #1a24d6;
     position: absolute;
     left: 50%;
@@ -97,6 +99,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .circle-co
     justify-content: center;
     align-items: center;
     transition: .2s ease;
+    box-shadow: 0 .2px 4px 0 rgba(255, 255, 255, .2);
 }
 
 nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .circle-container > .circle.active {
@@ -105,7 +108,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .circle-co
 
 nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .circle-container > .circle > .bi-moon-stars,
 nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .circle-container > .circle > .bi-brightness-high {
-    font-size: 13px;
+    font-size: 12px;
     color: #fff;
 }
 
@@ -132,7 +135,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(1) > .image-con
 
 nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .search-container {
     width: 50%;
-    height: 50%;
+    height: 45%;
     border: 1px solid rgba(255, 255, 255, .1);
     display: flex;
     border-radius: 5px;
@@ -157,7 +160,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .search-co
 
 nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .search-container > .btn-search {
     width: 15%;
-    background-color: rgba(52, 56, 65, 1);
+    background-color: rgb(54, 58, 66);
     border: none;
     cursor: pointer;
     border-left: .05px solid rgba(255, 255, 255, .1);
@@ -1324,7 +1327,7 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .hamburger
 
 .detail-comic > .main-contents > .container > .box > .item:nth-child(1) > .image-container {
     width: 100%;
-    height: 250px;
+    /* height: 250px; */
     /* border: 1px solid #fff; */
     display: flex;
 }
