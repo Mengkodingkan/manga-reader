@@ -98,8 +98,21 @@ const Home = () => {
                   <img src={ComicsImage2} alt="title" />
                 </div>
                 <div className="desc">
-                  <div className="box"></div>
-                  <div className="box"></div>
+                  <div className="box">
+                    <Link className="anchor" to="/">Rise From The Rubble</Link>
+                  </div>
+                  <div className="box">
+                    <div className="left">
+                      <Link className="anchor" to="/">Chapter 62</Link>
+                      <Link className="anchor" to="/">Chapter 61</Link>
+                      <Link className="anchor" to="/">Chapter 60</Link>
+                    </div>
+                    <div className="right">
+                      <h5>11 hours ago</h5>
+                      <h5>3 days ago</h5>
+                      <h5>6 days ago</h5>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="item">
@@ -107,8 +120,21 @@ const Home = () => {
                   <img src={ComicsImage2} alt="title" />
                 </div>
                 <div className="desc">
-                  <div className="box"></div>
-                  <div className="box"></div>
+                  <div className="box">
+                    <Link className="anchor" to="/">Rise From The Rubble</Link>
+                  </div>
+                  <div className="box">
+                    <div className="left">
+                      <Link className="anchor" to="/">Chapter 62</Link>
+                      <Link className="anchor" to="/">Chapter 61</Link>
+                      <Link className="anchor" to="/">Chapter 60</Link>
+                    </div>
+                    <div className="right">
+                      <h5>11 hours ago</h5>
+                      <h5>3 days ago</h5>
+                      <h5>6 days ago</h5>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="item">
@@ -116,8 +142,21 @@ const Home = () => {
                   <img src={ComicsImage2} alt="title" />
                 </div>
                 <div className="desc">
-                  <div className="box"></div>
-                  <div className="box"></div>
+                  <div className="box">
+                    <Link className="anchor" to="/">Rise From The Rubble</Link>
+                  </div>
+                  <div className="box">
+                    <div className="left">
+                      <Link className="anchor" to="/">Chapter 62</Link>
+                      <Link className="anchor" to="/">Chapter 61</Link>
+                      <Link className="anchor" to="/">Chapter 60</Link>
+                    </div>
+                    <div className="right">
+                      <h5>11 hours ago</h5>
+                      <h5>3 days ago</h5>
+                      <h5>6 days ago</h5>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="item">
@@ -125,8 +164,21 @@ const Home = () => {
                   <img src={ComicsImage2} alt="title" />
                 </div>
                 <div className="desc">
-                  <div className="box"></div>
-                  <div className="box"></div>
+                  <div className="box">
+                    <Link className="anchor" to="/">Rise From The Rubble</Link>
+                  </div>
+                  <div className="box">
+                    <div className="left">
+                      <Link className="anchor" to="/">Chapter 62</Link>
+                      <Link className="anchor" to="/">Chapter 61</Link>
+                      <Link className="anchor" to="/">Chapter 60</Link>
+                    </div>
+                    <div className="right">
+                      <h5>11 hours ago</h5>
+                      <h5>3 days ago</h5>
+                      <h5>6 days ago</h5>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="item">
@@ -134,8 +186,21 @@ const Home = () => {
                   <img src={ComicsImage2} alt="title" />
                 </div>
                 <div className="desc">
-                  <div className="box"></div>
-                  <div className="box"></div>
+                  <div className="box">
+                    <Link className="anchor" to="/">Rise From The Rubble</Link>
+                  </div>
+                  <div className="box">
+                    <div className="left">
+                      <Link className="anchor" to="/">Chapter 62</Link>
+                      <Link className="anchor" to="/">Chapter 61</Link>
+                      <Link className="anchor" to="/">Chapter 60</Link>
+                    </div>
+                    <div className="right">
+                      <h5>11 hours ago</h5>
+                      <h5>3 days ago</h5>
+                      <h5>6 days ago</h5>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="item">
@@ -143,8 +208,21 @@ const Home = () => {
                   <img src={ComicsImage2} alt="title" />
                 </div>
                 <div className="desc">
-                  <div className="box"></div>
-                  <div className="box"></div>
+                  <div className="box">
+                    <Link className="anchor" to="/">Rise From The Rubble</Link>
+                  </div>
+                  <div className="box">
+                    <div className="left">
+                      <Link className="anchor" to="/">Chapter 62</Link>
+                      <Link className="anchor" to="/">Chapter 61</Link>
+                      <Link className="anchor" to="/">Chapter 60</Link>
+                    </div>
+                    <div className="right">
+                      <h5>11 hours ago</h5>
+                      <h5>3 days ago</h5>
+                      <h5>6 days ago</h5>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="item">
@@ -152,8 +230,21 @@ const Home = () => {
                   <img src={ComicsImage2} alt="title" />
                 </div>
                 <div className="desc">
-                  <div className="box"></div>
-                  <div className="box"></div>
+                  <div className="box">
+                    <Link className="anchor" to="/">Rise From The Rubble</Link>
+                  </div>
+                  <div className="box">
+                    <div className="left">
+                      <Link className="anchor" to="/">Chapter 62</Link>
+                      <Link className="anchor" to="/">Chapter 61</Link>
+                      <Link className="anchor" to="/">Chapter 60</Link>
+                    </div>
+                    <div className="right">
+                      <h5>11 hours ago</h5>
+                      <h5>3 days ago</h5>
+                      <h5>6 days ago</h5>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="item">
@@ -161,8 +252,21 @@ const Home = () => {
                   <img src={ComicsImage2} alt="title" />
                 </div>
                 <div className="desc">
-                  <div className="box"></div>
-                  <div className="box"></div>
+                  <div className="box">
+                    <Link className="anchor" to="/">Rise From The Rubble</Link>
+                  </div>
+                  <div className="box">
+                    <div className="left">
+                      <Link className="anchor" to="/">Chapter 62</Link>
+                      <Link className="anchor" to="/">Chapter 61</Link>
+                      <Link className="anchor" to="/">Chapter 60</Link>
+                    </div>
+                    <div className="right">
+                      <h5>11 hours ago</h5>
+                      <h5>3 days ago</h5>
+                      <h5>6 days ago</h5>
+                    </div>
+                  </div>
                 </div>
               </div>
               {/* jadiin 1 box per komik*/}

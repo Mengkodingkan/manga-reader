@@ -5,6 +5,13 @@ const hamburgerActive = () => {
     document.getElementsByClassName('nav-mobile-container')[0].classList.toggle('active');
 }
 
+const circleActive = () => {
+    const circles = document.getElementsByClassName('circle');
+    for (const circle of circles) {
+        circle.classList.toggle('active');
+    }
+}
+
 const Header = () => {
     return (
         <>
@@ -21,6 +28,12 @@ const Header = () => {
                                 <div className="search-container">
                                     <input type="text" placeholder="Search"/>
                                     <button type="submit" className="btn-search"><i className="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                                <div className='circle-container'>
+                                    <div className='circle' onClick={circleActive}>
+                                        <i className="bi bi-moon-stars"></i>
+                                        <i class="bi bi-brightness-high"></i>
+                                    </div>
                                 </div>
                                 <div className='hamburger-container' onClick={hamburgerActive}>
                                     <span></span>
