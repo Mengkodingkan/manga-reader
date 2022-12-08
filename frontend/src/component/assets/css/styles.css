@@ -77,10 +77,10 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) {
 }
 
 nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .circle-container {
-    width: 45px;
-    height: 22px;
+    width: 40px;
+    height: 18px;
     /* border: 1px solid #fff; */
-    border-radius: 22px;
+    border-radius: 18px;
     background-color: #14161a;
     position: relative;
     display: flex;
@@ -89,26 +89,25 @@ nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .circle-co
 
 nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .circle-container > .circle {
     height: 100%;
-    width: 50%;
-    border-radius: 20px;
+    width: 44%;
+    border-radius: 18px;
     background-color: #1a24d6;
     position: absolute;
-    left: 50%;
+    margin-left: 56%;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .2s ease;
-    box-shadow: 0 .2px 4px 0 rgba(255, 255, 255, .2);
 }
 
 nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .circle-container > .circle.active {
-    left: 0;
+    margin-left: 0;
 }
 
 nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .circle-container > .circle > .bi-moon-stars,
 nav > .navbar > .navbar-top > .navbar-container > .box:nth-child(2) > .circle-container > .circle > .bi-brightness-high {
-    font-size: 12px;
+    font-size: 9px;
     color: #fff;
 }
 
